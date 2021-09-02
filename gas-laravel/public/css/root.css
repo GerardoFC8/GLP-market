@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&display=swap%27');
+
+:root {
+    font-family: 'DM Sans', sans-serif;
+    --void: #3b4a6b;
+    --void_claro: #4d618c;
+    --yellow: #f0d43a;
+    --white: #fffb;
+    --blue: #22b2da;
+    --boton: #f23557;
+}
