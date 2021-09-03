@@ -1,0 +1,10 @@
+:root{
+    font-family: 'Georama', sans-serif;
+    --void: #3b4a6b;
+    --void_claro: #4d618c;
+    --yellow: #f0d43a;
+    --white: #fffb;
+    --blue: #22b2da;
+    --boton: #f23557;
+    --shadow: 0px 10px 13px -7px #000000, 4px 8px 18px 11px rgba(0,0,0,0.1);
+}
