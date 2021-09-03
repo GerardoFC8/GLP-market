@@ -1,14 +1,8 @@
 @extends('layout.head')
 @section('page_name', '𝙂𝙖𝙨 𝙇𝙖𝙧𝙖𝙫𝙚𝙡')
-@section('estilo_propio', '../css/index.css');
+@section('estilo_propio', 'css/index.css');
+{{--@section('responsive', '');--}}
 
-@section('header')
-    <header>
-        <div>
-            header
-        </div>
-    </header>
-@endsection
 @section('content')
 <section id="part1">
     <div class="container-all">
@@ -19,45 +13,47 @@
         </div>
     </div>
 </section>
+
 <section id="part2">
     <h1>PRODUCTOS</h1>
     <div class="container-prod">
         <div class="prod">
-           <img src="../image/herramientas2-Producto.jpg">
+           <img src="image/herramientas2-Producto.jpg">
            <h4>Herramientas</h4>
            <a href="#">Ver más</a>
         </div>
 
         <div class="prod">
-            <img src="../image/autopartes-Producto.jpg">
+            <img src="image/autopartes-Producto.jpg">
             <h4>Auto partes</h4>
             <a href="#">Ver más</a>
         </div>
 
         <div class="prod">
-            <img src="../image/llantas-Producto.jpg">
+            <img src="image/llantas-Producto.jpg">
             <h4>Llantas</h4>
             <a href="#">Ver más</a>
         </div>
     </div>
 </section>
+
 <section id="part3">
     <h1>SERVICIOS</h1>
     <div class="container-prod">
         <div class="prod">
-           <img src="../image/mantenimiento-Servicio.jpg">
+           <img src="image/mantenimiento-Servicio.jpg">
            <h4>Mantenimiento General</h4>
            <a href="#">Ver más</a>
         </div>
 
         <div class="prod">
-            <img src="../image/instalacion-Servicio.jpg">
+            <img src="image/instalacion-Servicio.jpg">
             <h4>Instalacion de GLP</h4>
             <a href="#">Ver más</a>
         </div>
 
         <div class="prod">
-            <img src="../image/limpieza-Servicio.jpg">
+            <img src="image/limpieza-Servicio.jpg">
             <h4>Limpieza</h4>
             <a href="#">Ver más</a>
         </div>
@@ -69,13 +65,13 @@
 <section id="part4">
     <h1>OPINIONES</h1>
     <div class="usuario">
-      <img src="../image/usuario-Opinion.jpg">
+      <img src="image/usuario-Opinion.jpg">
       <h2>Nombre</h2>
     </div>
     <br>
     <br>
     <div class="usuario">
-        <img src="../image/usuario-Opinion.jpg">
+        <img src="image/usuario-Opinion.jpg">
         <h2>Nombre</h2>
     </div>
 </section>

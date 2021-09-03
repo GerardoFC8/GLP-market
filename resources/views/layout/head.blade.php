@@ -13,14 +13,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,400;1,200;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/app.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/barra_navegacion.css">
+{{--    <link rel="stylesheet" href="css/sub_barra_navegacion.css">--}}
+
 
     <link rel="stylesheet" href="@yield('estilo_propio')">
     <link rel="stylesheet" href="@yield('responsive')">
 </head>
 <body>
-@yield('header')
+@include('layout.barra_navegacion')
+@include('layout.sub_barra_navegacion')
 @yield('content')
 </body>
 </html>
