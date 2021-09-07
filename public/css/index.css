@@ -1,4 +1,4 @@
-#part1 {
+#main_screen {
     width: 100%;
     height: 100vh;
 }
@@ -6,35 +6,65 @@
 .container-all{
 	width: 100%;
 	display: flex;
-    background-color: #3b4a6b;
     height: 100vh;
 }
 
 .container-frase{
-	width: 40%;
-	padding: 2.3rem;
-	background: #3b4a6b;
-    font-size: 40px;
+    font-size: 5rem;
+    width: 40%;
+
+	padding: 0.125em;
+    margin: 0 2em;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+}
+
+.container-frase h1 span{
+    background: var(--fushia);
 }
 
 .container-img{
 	width: 100%;
-	background-image: url(../image/carro-remove.png);
-	background-position: center;
-	background-size: cover;
-    padding: 40px;
     position: relative;
-    font-size: 20px;
+
+    overflow: hidden;
 }
-#part2{
+
+.container-img img {
+    height: 90%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+/*======= SECTION =======*/
+.section{
+    background: var(--white);
+}
+
+.section .section_title{
+    font-size: 10rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    color: var(--gris_text);
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/*======= PRODUCTOS =======*/
+#section_productos{
     display: grid;
     height: 100vh;
-    background-color: olive;
-}
-#part2 h1{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .container-prod{
@@ -51,7 +81,7 @@
     width: 330px;
     height: 430px;
     border-radius: 8px;
-    box-shadow:  1px 2px 2px #3b4a6b;
+    box-shadow:  1px 2px 2px var(--void);
     overflow: hidden;
     margin: 20px;
     text-align: center;
@@ -60,44 +90,34 @@
 
 .container-prod .prod:hover{
     transform: translateY(-15px);
-    box-shadow:  5px 12px 16px #3b4a6b;
+    box-shadow:  5px 12px 16px var(--void);
 }
 
 .container-prod .prod img{
     width: 330px;
     height: 220px;
     margin: 2px 2px 2px 2px ;
-    border-color: #3b4a6b;
+    border-color: var(--void);
 }
 
+
+/*======= SERVICIOS =======*/
 #part3{
     display: grid;
     height: 100vh;
-    background-color: blue;
 }
 
-#part3 h1{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 100px;
-}
 
-#part4{
+/*======= OPINIONES =======*/
+.section_opiniones{
     display: grid;
     height: 100vh;
-    background-color: #f23557;
-}
-
-#part4 h1{
-    text-align: center;
-    font-size: 60px;
-    margin-top: 100px;
 }
 
 .usuario{
     width: 60%;
 	display: flex;
-    background-color: #3b4a6b;
+    background-color: var(--void_claro);
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -110,6 +130,8 @@
     margin-left: 40px;
 }
 
+
+/*======= FOOTER =======*/
 .container-footer{
     max-width:  1170px;
     margin: auto;
@@ -125,9 +147,8 @@
 }
 
 .footer{
-    background-color:#3b4a6b;
+    background-color:var(--void);
     padding: 70px 0;
-    margin-top: 50px;
 }
 
 .footer-col{

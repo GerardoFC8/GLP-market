@@ -26,25 +26,30 @@
 }
 
 .barra .nav1 ul li .navbutton {
+    padding: .25em;
     margin-top: 0.7vh;
-    color: var(--white-text);
+    color: var(--white);
     text-transform: uppercase;
+    border: 2px solid var(--void);
+
 }
 
-.barra .nav1 ul li .navbutton:hover {
-    background-color: white;
+.barra .nav1 ul li .navbutton:hover,
+.barra .nav1 ul li .navbutton:focus{
+    border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }
 
 .barra .nav1 ul li .navbuttonE {
-    background-color: var(--void);
-    border: none;
-    color: var(--white-text);
+    background-color: transparent;
+    border: 2px solid var(--void);
+    color: var(--white);
     text-transform: uppercase;
 }
 
-.barra .nav1 ul li .navbuttonE:hover {
-    background-color: white;
+.barra .nav1 ul li .navbuttonE:hover,
+.barra .nav1 ul li .navbuttonE:focus{
+    border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }
 
@@ -58,7 +63,7 @@
 
 .drawer {
     font-size: 1rem;
-    color: var(--white-text);
+    color: var(--white);
     float: left;
     cursor: pointer;
     display: none;
@@ -79,7 +84,7 @@
     cursor: pointer;
     color: white;
     border: none;
-    background-color: var(--void);
+    background-color: transparent;
     outline: none;
 }
 
@@ -136,7 +141,7 @@
 }
 
 .tooltip .info .producto{
-    color: var(--secundary);
+    color: var(--void);
     margin-bottom: 20px;
 }
 
@@ -157,5 +162,5 @@
 }
 
 .tooltip .info button:hover{
-    background: var(--void_claro);
+    background: var(--void);
 }

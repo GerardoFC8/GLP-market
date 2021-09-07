@@ -1,16 +1,19 @@
 :root{
     font-family: 'Georama', sans-serif;
-    --void: #3b4a6b;
-    --void_claro: #4d618c;
+    --void: #000000;
+    --void_claro: #393e46;
     --yellow: #f0d43a;
-    --white-text: #fff;
+    --fushia: #fc3a52;
+    --white: #fff;
+    --white_sub: #f2f2f2;
+    --gris_text: #7d7d84;
     --blue: #22b2da;
-    --boton: #f23557;
+    --boton: #ec4a04;
     --shadow: 0px 10px 13px -7px #000000, 4px 8px 18px 11px rgba(0,0,0,0.1);
 }
 
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: red;
+    background-color: var(--white);
 }

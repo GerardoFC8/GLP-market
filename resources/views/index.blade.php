@@ -4,18 +4,21 @@
 {{--@section('responsive', '');--}}
 
 @section('content')
-<section id="part1">
+<section class="section_main" id="main_screen">
     <div class="container-all">
         <div class="container-frase">
-            <h1>FRASE PARA EL CARRO</h1>
+            <h1>
+                <span>Lorem ipsum dolor sit amet, consectetur.</span>
+            </h1>
         </div>
         <div class="container-img">
+            <img src="image/carro-remove.png" alt="imagen auto principal">
         </div>
     </div>
 </section>
 
-<section id="part2">
-    <h1>PRODUCTOS</h1>
+<section class="section section_productos" id="section_productos">
+    <h1 class="section_title">PRODUCTOS</h1>
     <div class="container-prod">
         <div class="prod">
            <img src="image/herramientas2-Producto.jpg">
@@ -37,8 +40,8 @@
     </div>
 </section>
 
-<section id="part3">
-    <h1>SERVICIOS</h1>
+<section class="section" id="part3">
+    <h1 class="section_title">SERVICIOS</h1>
     <div class="container-prod">
         <div class="prod">
            <img src="image/mantenimiento-Servicio.jpg">
@@ -59,11 +62,12 @@
         </div>
     </div>
 </section>
-<br>
+
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0&appId=3114165578806569&autoLogAppEvents=1" nonce="vffXfQKo"></script>
-<section id="part4">
-    <h1>OPINIONES</h1>
+
+<section class="section section_opiniones" id="part4">
+    <h1 class="section_title" >OPINIONES</h1>
     <div class="usuario">
       <img src="image/usuario-Opinion.jpg">
       <h2>Nombre</h2>
@@ -71,10 +75,12 @@
     <br>
     <br>
     <div class="usuario">
-        <img src="image/usuario-Opinion.jpg">
+        <img src="image/usuario-Opinion.jpg" alt="imagen usuario">
         <h2>Nombre</h2>
     </div>
 </section>
+
+
 <footer class="footer">
     <div class="container-footer">
         <div class="row">
