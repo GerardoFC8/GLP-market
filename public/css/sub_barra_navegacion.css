@@ -1,0 +1,36 @@
+.barra2{
+    display: none;
+}
+
+.nav2 {
+    background-color: var(--void);
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barra2 .nav2 ul {
+    display: flex;
+}
+
+.nav2 .navbutton-nav2{
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: var(--void_claro);
+    outline: none;
+}
+
+.abajo2{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    transition: 0.8s;
+    top: 5vh;
+    width: 100%;
+}
+
+
+

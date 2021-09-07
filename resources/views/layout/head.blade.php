@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/barra_navegacion.css">
-{{--    <link rel="stylesheet" href="css/sub_barra_navegacion.css">--}}
+    <link rel="stylesheet" href="css/sub_barra_navegacion.css">
 
 
     <link rel="stylesheet" href="@yield('estilo_propio')">

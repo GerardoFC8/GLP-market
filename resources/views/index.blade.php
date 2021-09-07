@@ -1,6 +1,6 @@
 @extends('layout.head')
 @section('page_name', '𝙂𝙖𝙨 𝙇𝙖𝙧𝙖𝙫𝙚𝙡')
-@section('estilo_propio', 'css/index.css');
+@section('estilo_propio', 'css/index.css')
 {{--@section('responsive', '');--}}
 
 @section('content')

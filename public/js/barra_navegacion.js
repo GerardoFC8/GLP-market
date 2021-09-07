@@ -38,3 +38,9 @@ icono.addEventListener('mouseleave', () => {
 tooltip.addEventListener('mouseenter', () => clearTimeout(timer));
 
 tooltip.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+
+
+window.addEventListener('scroll', () => {
+    barra.classList.toggle('abajo', window.scrollY > 0);
+    barra2.classList.toggle('abajo2', window.scrollY > 0);
+});
