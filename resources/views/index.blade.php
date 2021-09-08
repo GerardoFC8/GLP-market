@@ -19,25 +19,19 @@
 
 <section class="section section_productos" id="section_productos">
     <h1 class="section_title">PRODUCTOS</h1>
-    <div class="container-prod">
-        <div class="prod">
-           <img src="image/herramientas2-Producto.jpg">
-           <h4>Herramientas</h4>
-           <a href="#">Ver más</a>
-        </div>
 
-        <div class="prod">
-            <img src="image/autopartes-Producto.jpg">
-            <h4>Auto partes</h4>
-            <a href="#">Ver más</a>
-        </div>
+    @foreach($producto as $product)
 
-        <div class="prod">
-            <img src="image/llantas-Producto.jpg">
-            <h4>Llantas</h4>
-            <a href="#">Ver más</a>
+        <div class="container-prod">
+            <div class="prod">
+                <img src="{{asset('storage').'/'.$product->Imagen_producto}}" alt="">
+                <h4>{{$product->Nombre}}</h4>
+                <a href="#">Ver más</a>
+            </div>
         </div>
-    </div>
+        
+    @endforeach
+
 </section>
 
 <section class="section" id="part3">
