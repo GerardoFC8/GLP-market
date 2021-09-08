@@ -1,10 +1,6 @@
-.barra2{
-    display: none;
-}
-
 .nav2 {
-    background-color: var(--void);
-    height: 5vh;
+    background-color: var(--void_claro);
+    min-height: 7vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +15,7 @@
     cursor: pointer;
     color: white;
     border: none;
-    background-color: var(--void_claro);
+    background-color: transparent;
     outline: none;
 }
 

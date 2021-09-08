@@ -1,7 +1,7 @@
 @extends('layout.head')
 @section('page_name', '𝙂𝙖𝙨 𝙇𝙖𝙧𝙖𝙫𝙚𝙡')
 @section('estilo_propio', 'css/index.css')
-{{--@section('responsive', '');--}}
+{{--@section('responsive', 'css/index_responsive.css');--}}
 
 @section('content')
 <section class="section_main" id="main_screen">
@@ -16,6 +16,8 @@
         </div>
     </div>
 </section>
+{{--###################### BARRA DE NAVEGACION ######################--}}
+@include('layout.barra_navegacion')
 
 <section class="section section_productos" id="section_productos">
     <h1 class="section_title">PRODUCTOS</h1>
@@ -62,9 +64,6 @@
         </div>
     </div>
 </section>
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v11.0&appId=3114165578806569&autoLogAppEvents=1" nonce="vffXfQKo"></script>
 
 <section class="section section_opiniones" id="part4">
     <h1 class="section_title" >OPINIONES</h1>
