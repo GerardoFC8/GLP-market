@@ -1,6 +1,6 @@
-<header>
-        <div class="barra" id="barra">
-            <nav class="nav1">
+<header id="header">
+        <div class="barra" id="barra" style="visibility: visible;">
+            <nav class="barra_main">
                 <input type="checkbox" id="ckbox">
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
@@ -14,6 +14,15 @@
                                 groups
                             </span>
                             Nosotros
+                        </button>
+                    </li>
+
+                    <li class="active li-nav1 menu-item" data-url="servicios">
+                        <button role="link" onclick="window.location='#'" class="navbutton">
+                            <span class="material-icons-outlined iconnav">
+                                miscellaneous_services
+                            </span>
+                            Productos
                         </button>
                     </li>
 
@@ -44,7 +53,7 @@
                     </li>
 
 
-{{--###################################### data tooltip  carrito ######################################--}}
+                {{--###################### CARRITO ######################--}}
                     <figcaption>
                         <li class="icono li-nav1" id="icono"><button role="link" onclick="window.location='#'" class="active navbuttonE"><span class="material-icons-outlined iconnavE">shopping_cart</span></button></li>
                         <div class="tooltip" id="tooltip">
@@ -64,5 +73,10 @@
                     </figcaption>
                 </ul>
             </nav>
+
+            {{--###################### SUB BARRA NAVEGACION ######################--}}
+{{--            @include('layout.sub_barra_navegacion')--}}
         </div>
     </header>
+<script src="js/barra_carro.js"></script>
+<script src="js/barra_observer.js"></script>

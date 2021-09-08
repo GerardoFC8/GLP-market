@@ -1,54 +1,65 @@
-.barra{
-    display: none;
+header{
+    position: relative;
 }
 
-.nav1 {
+.barra{
+    width: 100%;
+}
+
+.sticky .barra{
+    width: 100%;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.barra_main {
     background-color: var(--void);
-    height: 5vh;
+    min-height: 7vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.barra .nav1 ul {
+.barra_main ul {
     display: flex;
 }
 
-.barra .nav1 ul li {
+.barra_main ul li {
     border-right:  1px solid rgba(92, 89, 89, 0.41);
     margin-left: auto;
     margin-right: auto;
 }
 
-.barra .nav1 ul li:last-child {
+.barra_main ul li:last-child {
     border-right: none;
 }
 
-.barra .nav1 ul li .navbutton {
+.barra_main ul li .navbutton {
     padding: .25em;
     margin-top: 0.7vh;
     color: var(--white);
     text-transform: uppercase;
     border: 2px solid var(--void);
-
 }
 
-.barra .nav1 ul li .navbutton:hover,
-.barra .nav1 ul li .navbutton:focus{
+.barra_main ul li .navbutton:hover,
+.barra_main ul li .navbutton:focus{
     border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }
 
-.barra .nav1 ul li .navbuttonE {
+.barra_main ul li .navbuttonE {
     background-color: transparent;
     border: 2px solid var(--void);
     color: var(--white);
     text-transform: uppercase;
 }
 
-.barra .nav1 ul li .navbuttonE:hover,
-.barra .nav1 ul li .navbuttonE:focus{
+.barra_main ul li .navbuttonE:hover,
+.barra_main ul li .navbuttonE:focus{
     border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }
