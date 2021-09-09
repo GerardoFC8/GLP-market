@@ -12,6 +12,23 @@
     --shadow: 0px 10px 13px -7px #000000, 4px 8px 18px 11px rgba(0,0,0,0.1);
 }
 
+
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--void);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--fushia);
+    border-radius: 2px;
+}
+
+
 body {
     margin: 0;
     overflow-x: hidden;
