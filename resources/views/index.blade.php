@@ -5,7 +5,7 @@
 
 @section('content')
 <section class="section_main" id="main_screen">
-    <div class="container-all">
+    <div class="main_container">
         <div class="container-frase">
             <h1>
                 <span>Lorem ipsum dolor sit amet, consectetur.</span>
@@ -37,6 +37,7 @@
 
 </section>
 
+{{--###################### SERVICIOS ######################--}}
 <section class="section" id="part3">
     <h1 class="section_title">SERVICIOS</h1>
     <div class="container-prod">
@@ -59,6 +60,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="section section_opiniones" id="part4">
     <h1 class="section_title" >OPINIONES</h1>

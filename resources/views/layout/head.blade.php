@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/barra_navegacion.css">
     <link rel="stylesheet" href="css/sub_barra_navegacion.css">
 
-
     <link rel="stylesheet" href="@yield('estilo_propio')">
     <link rel="stylesheet" href="@yield('responsive')">
 </head>

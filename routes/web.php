@@ -15,10 +15,7 @@ use App\Http\Controllers\CategoriasController;
 |
 */
 
-// Route::get('/index', function () {
-//     return view('index');
-// });
-
 Route::resource('', CategoriasController::class);
 Route::resource('productos', ProductosController::class);
-// Route::resource('index', CategoriasController::class);
+
+
