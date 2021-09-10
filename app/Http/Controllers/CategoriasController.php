@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\productos;
+use App\Models\categorias;
 use Illuminate\Http\Request;
 
-class ProductosController extends Controller
+class CategoriasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class ProductosController extends Controller
      */
     public function index()
     {
-        $datos['producto'] = productos::paginate(100);
+        //
+        $datos['categoria'] = categorias::paginate(100);
         return view('index', $datos);
     }
 
@@ -25,6 +26,7 @@ class ProductosController extends Controller
      */
     public function create()
     {
+        //
         return view('CRUD.create');
     }
 
@@ -36,23 +38,24 @@ class ProductosController extends Controller
      */
     public function store(Request $request)
     {
-        $datosProductos = request()->except('_token');
+        //
+        $datosCategorias = request()->except('_token');
 
-        if ($request->hasFile('Imagen_producto')){
-            $datosProductos['Imagen_producto']=$request->file('Imagen_producto')->store('uploads', 'public');
+        if ($request->hasFile('ImgCategoria')){
+            $datosCategorias['ImgCategoria']=$request->file('ImgCategoria')->store('uploads2', 'public');
         }
 
-        productos::insert($datosProductos);
-        return response()->json($datosProductos);
+        categorias::insert($datosCategorias);
+        return response()->json($datosCategorias);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\categorias  $categorias
      * @return \Illuminate\Http\Response
      */
-    public function show(productos $productos)
+    public function show(categorias $categorias)
     {
         //
     }
@@ -60,10 +63,10 @@ class ProductosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\categorias  $categorias
      * @return \Illuminate\Http\Response
      */
-    public function edit(productos $productos)
+    public function edit(categorias $categorias)
     {
         //
     }
@@ -72,10 +75,10 @@ class ProductosController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\categorias  $categorias
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, productos $productos)
+    public function update(Request $request, categorias $categorias)
     {
         //
     }
@@ -83,11 +86,12 @@ class ProductosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\categorias  $categorias
      * @return \Illuminate\Http\Response
      */
-    public function destroy(productos $productos)
+    public function destroy(categorias $categorias)
     {
         //
     }
+
 }

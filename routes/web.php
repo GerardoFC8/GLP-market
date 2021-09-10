@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\CategoriasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,10 @@ use App\Http\Controllers\ProductosController;
 |
 */
 
-Route::get('/index', function () {
-    return view('index');
-});
+// Route::get('/index', function () {
+//     return view('index');
+// });
 
-Route::resource('index', ProductosController::class);
+Route::resource('', CategoriasController::class);
+Route::resource('productos', ProductosController::class);
+// Route::resource('index', CategoriasController::class);
