@@ -4,6 +4,8 @@
 {{--@section('responsive', 'css/index_responsive.css');--}}
 
 @section('content')
+
+{{--###################### MAIN SECTION ######################--}}
 <section class="section_main" id="main_screen">
     <div class="main_container">
         <div class="container-frase">
@@ -16,9 +18,22 @@
         </div>
     </div>
 </section>
+
 {{--###################### BARRA DE NAVEGACION ######################--}}
 @include('layout.barra_navegacion')
+{{--###################### SOBRE NOSOTROS ######################--}}
+<div class="sobre_nosotros">
+    <div class="sobre_n_text">
+        <h1>Sobre nosotros.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea, et corrupti incidunt, quae vero delectus maiores animi consequatur, ipsam quibusdam assumenda! Eos, laborum reprehenderit tenetur libero nulla iure officia sunt</p>
+    </div>
+    <div class="mapa">>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.64359146641!2d-77.06453438484249!3d-11.99914529149905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5e0!3m2!1sen!2spe!4v1631381026332!5m2!1sen!2spe" 
+        width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" title="mapa sobre nosotros"></iframe>
+    </div>
+</div>
 
+{{--###################### PRODUCTOS ######################--}}
 <section class="section section_productos" id="section_productos">
     <h1 class="section_title">PRODUCTOS</h1>
     <div class="container-prod">
@@ -66,7 +81,7 @@
     </div>
 </section>
 
-
+{{--###################### OPINIONES ######################--}}
 <section class="section section_opiniones" id="part4">
     <h1 class="section_title" >OPINIONES</h1>
     <div class="usuario">
@@ -81,6 +96,7 @@
     </div>
 </section>
 
+{{--###################### FOOTER ######################--}}
 <footer class="footer">
     <div class="container-footer">
         <div class="row">
