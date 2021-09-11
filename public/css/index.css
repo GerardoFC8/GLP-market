@@ -24,7 +24,7 @@
 }
 
 .container-frase h1 span{
-    background: var(--fushia);
+    background-color: var(--fushia);
 }
 
 .container-img{
@@ -49,13 +49,14 @@
 }
 
 .section .section_title{
-    font-size: 10rem;
+    font-size: var(--fz_titulos);
     font-weight: bold;
     text-transform: uppercase;
 
     color: var(--gris_text);
     text-align: center;
     margin-top: 100px;
+
 }
 
 
