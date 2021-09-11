@@ -33,27 +33,42 @@
     </div>
 </div>
 
+{{--###################### SEGUNDA IMAGEN ######################--}}
+<section class="section section_video">
+    <div class="segunda_container">
+         <video width="100%" autoplay muted loop>
+            <source src="image/video_bg.mp4" type="video/mp4">
+        </video> 
+    </div>
+</section>
+
 {{--###################### PRODUCTOS ######################--}}
 <section class="section section_productos" id="section_productos">
-    <h1 class="section_title">PRODUCTOS</h1>
-    <div class="container-prod">
-        <div class="prod">
-           <img src="image/herramientas2-Producto.jpg">
-           <h4>Herramientas</h4>
-           <a href="#">Ver más</a>
+    <h1 class="section_title"><span>PRODUCTOS</span></h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis quasi sapiente laboriosam quod qui! Veniam eligendi qui iusto nobis.</h2>
+    <div class="lista_marcas">
+        <div class="lista_marcas_container">
+            <img src="image/marca_logo1.png" alt="marca">
+            <img src="image/marca_logo2.png" alt="marca">
+            <img src="image/marca_logo3.png" alt="marca">
+            <img src="image/marca_logo4.png" alt="marca">
+            <img src="image/marca_logo5.png" alt="marca">
+            <img src="image/marca_logo6.png" alt="marca">
+            <img src="image/marca_logo7.png" alt="marca">
+            <img src="image/marca_logo8.png" alt="marca">
+            <img src="image/marca_logo9.png" alt="marca">
+            <img src="image/marca_logo10.png" alt="marca">
         </div>
-
-        <div class="prod">
-            <img src="image/autopartes-Producto.jpg">
-            <h4>Auto partes</h4>
-            <a href="#">Ver más</a>
-        </div>
-
-        <div class="prod">
-            <img src="image/llantas-Producto.jpg">
-            <h4>Llantas</h4>
-            <a href="#">Ver más</a>
-        </div>
+    </div>
+    <div class="categorias_container">
+        <a href="#">
+            <div class="categoria_unidad">
+                <div class="categoria_imagen">
+                    <img src="image/herramientas2-Producto.jpg">
+                </div>
+            <h2>Herramientas</h2>
+            </div>
+        </a>
     </div>
 </section>
 
@@ -61,19 +76,19 @@
 <section class="section" id="part3">
     <h1 class="section_title">SERVICIOS</h1>
     <div class="container-prod">
-        <div class="prod">
+        <div class="categoria_unidad">
            <img src="image/mantenimiento-Servicio.jpg">
            <h4>Mantenimiento General</h4>
            <a href="#">Ver más</a>
         </div>
 
-        <div class="prod">
+        <div class="categoria_unidad">
             <img src="image/instalacion-Servicio.jpg">
             <h4>Instalacion de GLP</h4>
             <a href="#">Ver más</a>
         </div>
 
-        <div class="prod">
+        <div class="categoria_unidad">
             <img src="image/limpieza-Servicio.jpg">
             <h4>Limpieza</h4>
             <a href="#">Ver más</a>

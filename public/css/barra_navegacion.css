@@ -1,20 +1,14 @@
-header{
-    position: relative;
-}
-
-/* .barra{
-    width: 100%;
-} */
-
 .sticky .barra{
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
     z-index: 10;
 }
 
 .barra_main {
     background-color: var(--void);
-    min-height: 7vh;
+    min-height: var(--barra_altura);
     /* width: 100%; */
     display: flex;
     justify-content: center;

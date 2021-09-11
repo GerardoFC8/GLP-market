@@ -42,7 +42,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    z-index: -1;
+    z-index: -1; /* imagen auto*/
 }
 
 /*======= SOBRE NOSOTROS =======*/
@@ -52,88 +52,126 @@
     text-align: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    padding-top: 8em;
+    padding-top: var(--barra_altura);
+    padding-bottom: var(--barra_altura);
 }
+
+.sobre_nosotros.compensar{
+    padding-top: calc(var(--barra_altura) + var(--barra_altura));
+}
+
 .sobre_nosotros .sobre_n_text{
     position: relative;
 }
 
 .sobre_nosotros .sobre_n_text p{
-    width: 80%;
+    width: 75%;
     position: absolute;
     right: 0;
+    top: 5em;
 }
 
 .sobre_nosotros h1{
     font-size: var(--fz_subtitulos);
     font-weight: bold;
+    padding: .50em 0 0 0;
+    border-bottom: 3px solid var(--fushia);
 }
 .sobre_nosotros p{
     padding: 1em 0;
+    line-height: 1.5em;
 }
 
 .sobre_nosotros .mapa{
     text-align: left;
-    padding: 0 0 2em 0;
+    padding: 0 0 2em 2em;
 }
 
 
 /*======= SECTION =======*/
 .section{
-    background: var(--white);
+    background: var(--void);
 }
 
 .section .section_title{
+    height: 125px;
     font-size: var(--fz_titulos);
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.25em;
 
-    color: var(--gris_text);
+    /* color: var(--gris_text); */
+    color: #fff;
     text-align: center;
-    margin-top: 100px;
+    padding: 1em 0 0 0;
 
+    border-bottom: 3px solid var(--fushia);
 }
 
 
+/*======= VIDEO =======*/
+.section_video {
+    position: relative;
+}
+
+.segunda_container video{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
 /*======= PRODUCTOS =======*/
 #section_productos{
+    margin-top: 50vh;
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     z-index: 2;
 }
 
-.container-prod{
-    width: 100%;
-    max-width: 1200px;
-    height: 430px;
+.section_productos h2{
+    font-size: 1.25rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.lista_marcas {
+    height: 35px;
+}
+
+.lista_marcas_container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0 15%;
+    text-align: center;
+}
+
+.lista_marcas_container img{
+    width: 35px;
+}
+
+.categorias_container{
+    margin: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
 }
 
-.container-prod .prod{
-    width: 330px;
-    height: 430px;
-    border-radius: 8px;
+.categoria_unidad{
     box-shadow:  1px 2px 2px var(--void);
-    overflow: hidden;
-    margin: 20px;
     text-align: center;
-    transition: all 0.25s;
+    background: var(--fushia);
 }
 
-.container-prod .prod:hover{
-    transform: translateY(-15px);
-    box-shadow:  5px 12px 16px var(--void);
+.categoria_imagen{
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
 }
 
-.container-prod .prod img{
-    width: 330px;
-    height: 220px;
-    margin: 2px 2px 2px 2px ;
+.categoria_imagen img{
+    width: 350px;
     border-color: var(--void);
 }
 
