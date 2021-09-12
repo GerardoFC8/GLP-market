@@ -27,7 +27,7 @@
         <h1>Sobre nosotros.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea, et corrupti incidunt, quae vero delectus maiores animi consequatur, ipsam quibusdam assumenda! Eos, laborum reprehenderit tenetur libero nulla iure officia sunt</p>
     </div>
-    <div class="mapa">>
+    <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.64359146641!2d-77.06453438484249!3d-11.99914529149905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5e0!3m2!1sen!2spe!4v1631381026332!5m2!1sen!2spe" 
         width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" title="mapa sobre nosotros"></iframe>
     </div>
@@ -60,8 +60,49 @@
             <img src="image/marca_logo10.png" alt="marca">
         </div>
     </div>
+
     <div class="categorias_container">
-        <a href="#">
+
+        <a href="/productos?filtro=LLANTAS+Y+AROS">
+            <div class="categoria_unidad">
+                <div class="categoria_imagen">
+                    <img src="image/herramientas2-Producto.jpg">
+                </div>
+            <h2>LLANTAS Y AROS</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="categorias_container">
+
+        <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
+            <div class="categoria_unidad">
+                <div class="categoria_imagen">
+                    <img src="image/herramientas2-Producto.jpg">
+                </div>
+            <h2>BATERIAS PARA AUTOS</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="categorias_container">
+
+        <a href="/productos?filtro=AUDIO+Y+VIDEO">
+            <div class="categoria_unidad">
+                <div class="categoria_imagen">
+                    <img src="image/herramientas2-Producto.jpg">
+                </div>
+            <h2>AUDIO Y VIDEO</h2>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="categorias_container">
+
+        <a href="/productos?filtro=Herramientas">
             <div class="categoria_unidad">
                 <div class="categoria_imagen">
                     <img src="image/herramientas2-Producto.jpg">
@@ -69,46 +110,38 @@
             <h2>Herramientas</h2>
             </div>
         </a>
+
     </div>
+
+    <div class="categorias_container">
+
+        <a href="/productos?filtro=LIMPIEZA">
+            <div class="categoria_unidad">
+                <div class="categoria_imagen">
+                    <img src="image/herramientas2-Producto.jpg">
+                </div>
+            <h2>LIMPIEZA</h2>
+            </div>
+        </a>
+
+    </div>
+
 </section>
 
 {{--###################### SERVICIOS ######################--}}
 <section class="section" id="part3">
     <h1 class="section_title">SERVICIOS</h1>
+
+    @foreach($servicios as $servicio)
     <div class="container-prod">
-        <div class="categoria_unidad">
-           <img src="image/mantenimiento-Servicio.jpg">
-           <h4>Mantenimiento General</h4>
+        <div class="prod">
+           <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt=""> 
+           <h4>{{ $servicio->nombre }}</h4>
+           <h3>{{ $servicio->descripcion }}</h3>
            <a href="#">Ver más</a>
         </div>
+    @endforeach
 
-        <div class="categoria_unidad">
-            <img src="image/instalacion-Servicio.jpg">
-            <h4>Instalacion de GLP</h4>
-            <a href="#">Ver más</a>
-        </div>
-
-        <div class="categoria_unidad">
-            <img src="image/limpieza-Servicio.jpg">
-            <h4>Limpieza</h4>
-            <a href="#">Ver más</a>
-        </div>
-    </div>
-</section>
-
-{{--###################### OPINIONES ######################--}}
-<section class="section section_opiniones" id="part4">
-    <h1 class="section_title" >OPINIONES</h1>
-    <div class="usuario">
-      <img src="image/usuario-Opinion.jpg">
-      <h2>Nombre</h2>
-    </div>
-    <br>
-    <br>
-    <div class="usuario">
-        <img src="image/usuario-Opinion.jpg" alt="imagen usuario">
-        <h2>Nombre</h2>
-    </div>
 </section>
 
 {{--###################### FOOTER ######################--}}
