@@ -19,61 +19,102 @@
 {{--###################### BARRA DE NAVEGACION ######################--}}
 @include('layout.barra_navegacion')
 
-<section class="section section_productos" id="section_productos">
+<style>
+    .sections_productos{
+        background: white;
+    }
+</style>
+
+<section class="section" id="part3">
     <h1 class="section_title">CATEGORIAS</h1>
 
-    @foreach($categoria as $categorias)
-
-        <div class="container-prod">
-            <div class="prod">
-                <img src="{{asset('storage').'/'.$categorias->ImgCategoria}}" alt="">
-                <h4>{{$categorias->Categorias}}</h4>
-                <h5>{{$categorias->Descripcion}}</h5>
-                <a href="#">Ver más</a>
-            </div>
+    <div class="container-prod">
+        <div class="prod">
+           <img src=""> 
+           <h4>LLANTAS Y AROS</h4>
+           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolor deleniti 
+               voluptatem ad quis molestiae enim iure consequatur quos quae, eos eveniet nihil perspiciatis 
+               hic aliquam ex consectetur a tenetur?</h3>
+           <form action="/productos">
+               <input class="input-filtro" name="filtro" type="text" value="LLANTAS Y AROS">
+               <button type="submit">Ver más</button>
+           </form>
         </div>
-        
-    @endforeach
+    </div>
+
+    <div class="container-prod">
+        <div class="prod">
+            <img src=""> 
+            <h4>BATERIAS PARA AUTOS</h4>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolor deleniti 
+               voluptatem ad quis molestiae enim iure consequatur quos quae, eos eveniet nihil perspiciatis 
+               hic aliquam ex consectetur a tenetur?</h3>
+            <form action="/productos">
+               <input class="input-filtro" name="filtro" type="text" value="BATERIAS PARA AUTOS">
+               <button type="submit">Ver más</button>
+           </form>
+        </div>
+    </div>
+
+    <div class="container-prod">
+        <div class="prod">
+           <img src=""> 
+           <h4>AUDIO Y VIDEO PARA AUTOS</h4>
+           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolor deleniti 
+               voluptatem ad quis molestiae enim iure consequatur quos quae, eos eveniet nihil perspiciatis 
+               hic aliquam ex consectetur a tenetur?</h3>
+           <form action="/productos">
+               <input class="input-filtro" name="filtro" type="text" value="AUDIO Y VIDEO PARA AUTOS">
+               <button type="submit">Ver más</button>
+           </form>
+        </div>
+    </div>
+
+    <div class="container-prod">
+        <div class="prod">
+           <img src=""> 
+           <h4>HERRAMIENTAS</h4>
+           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolor deleniti 
+               voluptatem ad quis molestiae enim iure consequatur quos quae, eos eveniet nihil perspiciatis 
+               hic aliquam ex consectetur a tenetur?</h3>
+           <form action="/productos">
+               <input class="input-filtro" name="filtro" type="text" value="HERRAMIENTAS">
+               <button type="submit">Ver más</button>
+           </form>
+        </div>
+    </div>
+
+    <div class="container-prod">
+        <div class="prod">
+           <img src=""> 
+           <h4>LIMPIEZA</h4>
+           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, dolor deleniti 
+               voluptatem ad quis molestiae enim iure consequatur quos quae, eos eveniet nihil perspiciatis 
+               hic aliquam ex consectetur a tenetur?</h3>
+           <form action="/productos">
+               <input class="input-filtro" name="filtro" type="text" value="LIMPIEZA">
+               <button type="submit">Ver más</button>
+           </form>
+        </div>
+    </div>
 
 </section>
 
 {{--###################### SERVICIOS ######################--}}
 <section class="section" id="part3">
     <h1 class="section_title">SERVICIOS</h1>
+
+    @foreach($servicios as $servicio)
     <div class="container-prod">
         <div class="prod">
-           <img src="image/mantenimiento-Servicio.jpg">
-           <h4>Mantenimiento General</h4>
+           <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt=""> 
+           <h4>{{ $servicio->nombre }}</h4>
+           <h3>{{ $servicio->descripcion }}</h3>
            <a href="#">Ver más</a>
         </div>
-
-        <div class="prod">
-            <img src="image/instalacion-Servicio.jpg">
-            <h4>Instalacion de GLP</h4>
-            <a href="#">Ver más</a>
-        </div>
-
-        <div class="prod">
-            <img src="image/limpieza-Servicio.jpg">
-            <h4>Limpieza</h4>
-            <a href="#">Ver más</a>
-        </div>
     </div>
-</section>
-
-
-<section class="section section_opiniones" id="part4">
-    <h1 class="section_title" >OPINIONES</h1>
-    <div class="usuario">
-      <img src="image/usuario-Opinion.jpg">
-      <h2>Nombre</h2>
-    </div>
-    <br>
-    <br>
-    <div class="usuario">
-        <img src="image/usuario-Opinion.jpg" alt="imagen usuario">
-        <h2>Nombre</h2>
-    </div>
+    @endforeach
+    
 </section>
 
 

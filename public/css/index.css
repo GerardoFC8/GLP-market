@@ -61,7 +61,7 @@
 
 /*======= PRODUCTOS =======*/
 #section_productos{
-    height: 100vh;
+    height: 200vh;
     position: relative;
     z-index: 2;
 }
@@ -103,16 +103,10 @@
 /*======= SERVICIOS =======*/
 #part3{
     display: grid;
-    height: 100vh;
 }
 
 
 /*======= OPINIONES =======*/
-.section_opiniones{
-    display: grid;
-    height: 100vh;
-}
-
 .usuario{
     width: 60%;
 	display: flex;
@@ -193,4 +187,8 @@
 .footer-col ul li a:hover{
     color: white;
     padding-left: 8px ;
+}
+
+.input-filtro{
+    display: none;
 }

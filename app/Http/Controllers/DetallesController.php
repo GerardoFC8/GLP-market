@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\categorias;
+use App\Models\detalles;
 use Illuminate\Http\Request;
 
-class CategoriasController extends Controller
+class DetallesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,6 @@ class CategoriasController extends Controller
     public function index()
     {
         //
-        $datos['categoria'] = categorias::paginate(100);
-        return view('index', $datos);
     }
 
     /**
@@ -27,7 +25,6 @@ class CategoriasController extends Controller
     public function create()
     {
         //
-        return view('CRUD.create');
     }
 
     /**
@@ -39,23 +36,15 @@ class CategoriasController extends Controller
     public function store(Request $request)
     {
         //
-        $datosCategorias = request()->except('_token');
-
-        if ($request->hasFile('ImgCategoria')){
-            $datosCategorias['ImgCategoria']=$request->file('ImgCategoria')->store('uploads2', 'public');
-        }
-
-        categorias::insert($datosCategorias);
-        return response()->json($datosCategorias);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\categorias  $categorias
+     * @param  \App\Models\detalles  $detalles
      * @return \Illuminate\Http\Response
      */
-    public function show(categorias $categorias)
+    public function show(detalles $detalles)
     {
         //
     }
@@ -63,10 +52,10 @@ class CategoriasController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\categorias  $categorias
+     * @param  \App\Models\detalles  $detalles
      * @return \Illuminate\Http\Response
      */
-    public function edit(categorias $categorias)
+    public function edit(detalles $detalles)
     {
         //
     }
@@ -75,10 +64,10 @@ class CategoriasController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\categorias  $categorias
+     * @param  \App\Models\detalles  $detalles
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, categorias $categorias)
+    public function update(Request $request, detalles $detalles)
     {
         //
     }
@@ -86,12 +75,11 @@ class CategoriasController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\categorias  $categorias
+     * @param  \App\Models\detalles  $detalles
      * @return \Illuminate\Http\Response
      */
-    public function destroy(categorias $categorias)
+    public function destroy(detalles $detalles)
     {
         //
     }
-
 }

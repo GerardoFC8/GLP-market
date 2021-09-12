@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductosController;
-use App\Http\Controllers\CategoriasController;
-
+use App\Http\Controllers\ServiciosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +14,17 @@ use App\Http\Controllers\CategoriasController;
 |
 */
 
-Route::resource('', CategoriasController::class);
-Route::resource('productos', ProductosController::class);
+Route::get('/', function () {
+    return view('index');
+});
+Route::resource('/', ProductosController::class);
 
+Route::get('/productos', function () {
+    return view('productos');
+});
+Route::resource('/productos', ServiciosController::class);
 
+Route::get('/detalles', function () {
+    return view('productos_detalle');
+});
+Route::resource('/detalles', ServiciosController::class);

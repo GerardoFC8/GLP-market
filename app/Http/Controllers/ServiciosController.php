@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\productos;
+use App\Models\servicios;
 use Illuminate\Http\Request;
 
-class ProductosController extends Controller
+class ServiciosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $servicios = \DB::table('servicios')
-                    ->select('servicios.*')
+        //
+        $filtro = $request->get('filtro');
+        $productos = \DB::table('productos')
+                    ->select('productos.*')
+                    ->where('Categoria', 'like','%'.$filtro.'%')
                     ->get();
-        return view('index')-> with('servicios', $servicios);
+        return view('productos')-> with('productos', $productos);
     }
 
     /**
@@ -27,7 +30,7 @@ class ProductosController extends Controller
      */
     public function create()
     {
-        return view('CRUD.create');
+        //
     }
 
     /**
@@ -38,23 +41,16 @@ class ProductosController extends Controller
      */
     public function store(Request $request)
     {
-        $datosProductos = request()->except('_token');
-
-        if ($request->hasFile('Imagen_producto')){
-            $datosProductos['Imagen_producto']=$request->file('Imagen_producto')->store('uploads', 'public');
-        }
-
-        productos::insert($datosProductos);
-        return response()->json($datosProductos);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\servicios  $servicios
      * @return \Illuminate\Http\Response
      */
-    public function show(productos $productos)
+    public function show(servicios $servicios)
     {
         //
     }
@@ -62,10 +58,10 @@ class ProductosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\servicios  $servicios
      * @return \Illuminate\Http\Response
      */
-    public function edit(productos $productos)
+    public function edit(servicios $servicios)
     {
         //
     }
@@ -74,10 +70,10 @@ class ProductosController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\servicios  $servicios
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, productos $productos)
+    public function update(Request $request, servicios $servicios)
     {
         //
     }
@@ -85,10 +81,10 @@ class ProductosController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\productos  $productos
+     * @param  \App\Models\servicios  $servicios
      * @return \Illuminate\Http\Response
      */
-    public function destroy(productos $productos)
+    public function destroy(servicios $servicios)
     {
         //
     }
