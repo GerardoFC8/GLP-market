@@ -36,9 +36,9 @@
 {{--###################### SEGUNDA IMAGEN ######################--}}
 <section class="section section_video">
     <div class="segunda_container">
-         <video width="100%" autoplay muted loop>
+        <video width="100%" autoplay muted loop>
             <source src="image/video_bg.mp4" type="video/mp4">
-        </video> 
+        </video>
     </div>
 </section>
 
