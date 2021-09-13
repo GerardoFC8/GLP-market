@@ -60,61 +60,80 @@
             <img src="image/marca_logo10.png" alt="marca">
         </div>
     </div>
+
     <div class="categorias_container">
-    <div class="container-serv">
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-          <a href="/productos?filtro=LLANTAS+Y+AROS">
+        <div class="container-serv">
+        <a href="/productos?filtro=LLANTAS+Y+AROS">
+            <div class="box-all">
+            <div class="imgBx">
+                <img src="image/mantenimiento-Servicio.jpg">
+            </div>
+            <div class="box-contenido">
+                <h3>LLANTAS Y AROS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
+        </a>
         </div>
-        <div class="box-contenido">
-          <h3>LLANTAS Y AROS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+        <div class="container-serv">
+        <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
+            <div class="box-all">
+                <div class="imgBx">
+                    <img src="image/mantenimiento-Servicio.jpg">
+                </div>
+                <div class="box-contenido">
+                    <h3>BATERIAS PARA AUTOS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </a>
         </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-          <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
+
+        <div class="container-serv">
+        <a href="/productos?filtro=AUDIO+Y+VIDEO">
+            <div class="box-all">
+                <div class="imgBx">
+                    <img src="image/mantenimiento-Servicio.jpg">
+                </div>
+                <div class="box-contenido">
+                    <h3>AUDIO Y VIDEO</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </a>
         </div>
-        <div class="box-contenido">
-          <h3>BATERIAS PARA AUTOS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="container-serv">
+        <a href="/productos?filtro=LIMPIEZA">
+            <div class="box-all">
+            <div class="imgBx">
+                <img src="image/mantenimiento-Servicio.jpg">
+                
+            </div>
+            <div class="box-contenido">
+                <h3>LIMPIEZA</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            </div>
+        </a>
         </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-          <a href="/productos?filtro=AUDIO+Y+VIDEO">
+
+        <div class="container-serv">
+        <a href="/productos?filtro=Herramientas">
+            <div class="box-all">
+                <div class="imgBx">
+                    <img src="image/mantenimiento-Servicio.jpg">
+                </div>
+                <div class="box-contenido">
+                    <h3>HERRAMIENTAS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </a>
         </div>
-        <div class="box-contenido">
-          <h3>AUDIO Y VIDEO</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-          <a href="/productos?filtro=LIMPIEZA">
-        </div>
-        <div class="box-contenido">
-          <h3>LIMPIEZA</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-          <a href="/productos?filtro=Herramientas">
-        </div>
-        <div class="box-contenido">
-          <h3>HERRAMIENTAS</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
 
     </div>
-
 </section>
 
 {{--###################### SERVICIOS ######################--}}

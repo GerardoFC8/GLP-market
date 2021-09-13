@@ -23,8 +23,6 @@ Route::get('/contacto', function () {
     return view('layout.contacto');
 });
 
-
-
 Route::get('/productos', function () {
     return view('productos');
 });
