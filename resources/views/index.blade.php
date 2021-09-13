@@ -72,10 +72,6 @@
             </div>
         </a>
 
-    </div>
-
-    <div class="categorias_container">
-
         <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
             <div class="categoria_unidad">
                 <div class="categoria_imagen">
@@ -84,10 +80,6 @@
             <h2>BATERIAS PARA AUTOS</h2>
             </div>
         </a>
-
-    </div>
-
-    <div class="categorias_container">
 
         <a href="/productos?filtro=AUDIO+Y+VIDEO">
             <div class="categoria_unidad">
@@ -98,10 +90,6 @@
             </div>
         </a>
 
-    </div>
-
-    <div class="categorias_container">
-
         <a href="/productos?filtro=Herramientas">
             <div class="categoria_unidad">
                 <div class="categoria_imagen">
@@ -110,10 +98,6 @@
             <h2>Herramientas</h2>
             </div>
         </a>
-
-    </div>
-
-    <div class="categorias_container">
 
         <a href="/productos?filtro=LIMPIEZA">
             <div class="categoria_unidad">
@@ -129,18 +113,19 @@
 </section>
 
 {{--###################### SERVICIOS ######################--}}
-<section class="section" id="part3">
+<section class="section section_servicios">
     <h1 class="section_title">SERVICIOS</h1>
 
-    @foreach($servicios as $servicio)
-    <div class="container-prod">
-        <div class="prod">
-           <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt=""> 
-           <h4>{{ $servicio->nombre }}</h4>
-           <h3>{{ $servicio->descripcion }}</h3>
-           <a href="#">Ver más</a>
-        </div>
-    @endforeach
+    <div class="categorias_container">
+        @foreach($servicios as $servicio)
+            <div class="prod">
+            <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
+            <h4>{{ $servicio->nombre }}</h4>
+            <h3>{{ $servicio->descripcion }}</h3>
+            <a href="#">Ver más</a>
+            </div>
+        @endforeach
+    </div>
 
 </section>
 
