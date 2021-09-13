@@ -5,7 +5,9 @@
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
                 </label>
-                <a onclick="window.location='index'"><img src="image/logo.png" alt="" width="100px"></a>
+                <img src="image/logo.png" alt="" width="100px" style="margin-right: 1em;">
+
+
                 <ul class="menu-box">
                     <li class="active li-nav1 menu-item" data-url="nosotros">
                         <button role="link" onclick="window.location='#'" class="navbutton">

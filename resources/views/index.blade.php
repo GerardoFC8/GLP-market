@@ -27,7 +27,7 @@
         <h1>Sobre nosotros.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea, et corrupti incidunt, quae vero delectus maiores animi consequatur, ipsam quibusdam assumenda! Eos, laborum reprehenderit tenetur libero nulla iure officia sunt</p>
     </div>
-    <div class="mapa">>
+    <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.64359146641!2d-77.06453438484249!3d-11.99914529149905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5e0!3m2!1sen!2spe!4v1631381026332!5m2!1sen!2spe" 
         width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" title="mapa sobre nosotros"></iframe>
     </div>
@@ -36,9 +36,9 @@
 {{--###################### SEGUNDA IMAGEN ######################--}}
 <section class="section section_video">
     <div class="segunda_container">
-         <video width="100%" autoplay muted loop>
+        <video width="100%" autoplay muted loop>
             <source src="image/video_bg.mp4" type="video/mp4">
-        </video> 
+        </video>
     </div>
 </section>
 
@@ -60,69 +60,81 @@
             <img src="image/marca_logo10.png" alt="marca">
         </div>
     </div>
+    <div class="categorias_container">
     <div class="container-serv">
       <div class="box-all">
         <div class="imgBx">
           <img src="image/mantenimiento-Servicio.jpg">
+          <a href="/productos?filtro=LLANTAS+Y+AROS">
         </div>
         <div class="box-contenido">
-          <h3>Productos</h3>
+          <h3>LLANTAS Y AROS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
       <div class="box-all">
         <div class="imgBx">
           <img src="image/mantenimiento-Servicio.jpg">
+          <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
         </div>
         <div class="box-contenido">
-          <h3>Productos</h3>
+          <h3>BATERIAS PARA AUTOS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
       <div class="box-all">
         <div class="imgBx">
           <img src="image/mantenimiento-Servicio.jpg">
+          <a href="/productos?filtro=AUDIO+Y+VIDEO">
         </div>
         <div class="box-contenido">
-          <h3>Productos</h3>
+          <h3>AUDIO Y VIDEO</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+          <a href="/productos?filtro=LIMPIEZA">
+        </div>
+        <div class="box-contenido">
+          <h3>LIMPIEZA</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+          <a href="/productos?filtro=Herramientas">
+        </div>
+        <div class="box-contenido">
+          <h3>HERRAMIENTAS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
     </div>
+
 </section>
 
 {{--###################### SERVICIOS ######################--}}
-<section class="section">
+
+
+<section class="section section_servicios">
 <h1 class="section_title"><span>SERVICIOS</span></h1>
-<div class="container-serv">
-      <div class="box-all">
+<div class="container-serv">     
+    @foreach($servicios as $servicio)
+    <div class="box-all">
         <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
+            <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
         </div>
         <div class="box-contenido">
-          <h3>Mantenimiento</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h4>{{ $servicio->nombre }}</h4>
+            <p>{{ $servicio->descripcion }}</p>
         </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-        </div>
-        <div class="box-contenido">
-          <h3>Mantenimiento</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div class="box-all">
-        <div class="imgBx">
-          <img src="image/mantenimiento-Servicio.jpg">
-        </div>
-        <div class="box-contenido">
-          <h3>Mantenimiento</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
     </div>
+    @endforeach
+</div>
 </section>
 
 <!---comentarios--->

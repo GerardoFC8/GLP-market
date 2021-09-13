@@ -9,7 +9,6 @@
 .barra_main {
     background-color: var(--void);
     min-height: var(--barra_altura);
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,29 +28,32 @@
     border-right: none;
 }
 
-.barra_main ul li .navbutton {
+/* botones */
+.navbutton {
     padding: .25em;
     margin-top: 0.7vh;
     color: var(--white);
     text-transform: uppercase;
     border: 2px solid var(--void);
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
-.barra_main ul li .navbutton:hover,
-.barra_main ul li .navbutton:focus{
+.navbutton:hover,
+.navbutton:focus{
     border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }
 
-.barra_main ul li .navbuttonE {
+.navbuttonE {
     background-color: transparent;
     border: 2px solid var(--void);
     color: var(--white);
     text-transform: uppercase;
 }
 
-.barra_main ul li .navbuttonE:hover,
-.barra_main ul li .navbuttonE:focus{
+.navbuttonE:hover,
+.navbuttonE:focus{
     border-bottom: 2px solid var(--fushia);
     transition: all .3s;
 }

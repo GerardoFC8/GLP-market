@@ -129,6 +129,7 @@
     z-index: 2;
 }
 
+
 .section_productos h2{
     font-size: 1.25rem;
     color: var(--white);
@@ -152,6 +153,7 @@
 
 .categorias_container{
     margin: 10%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -177,6 +179,11 @@
 
 
 /*======= SERVICIOS =======*/
+
+.section_servicios{
+    display: grid;
+}
+
 
 .container-serv {
     width: 1000px;
@@ -260,6 +267,19 @@
 
 /*======= OPINIONES =======*/
 
+.usuario{
+    width: 60%;
+	display: flex;
+    background-color: var(--void_claro);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.usuario img{
+    width: 200px;
+}
+
+
 .comentarios{
     margin-top: 600px;
     max-width: 900px;
@@ -339,6 +359,7 @@
     padding-left: 8px ;
 }
 
+
 .container2-footer{
     color: var(--white);
     display: flex;  
@@ -361,3 +382,8 @@
         margin-top: 20px;
     }
 }
+
+.input-filtro{
+    display: none;
+}
+
