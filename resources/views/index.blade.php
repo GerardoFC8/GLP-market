@@ -60,95 +60,122 @@
             <img src="image/marca_logo10.png" alt="marca">
         </div>
     </div>
-    <div class="categorias_container">
-        <a href="#">
-            <div class="categoria_unidad">
-                <div class="categoria_imagen">
-                    <img src="image/herramientas2-Producto.jpg">
-                </div>
-            <h2>Herramientas</h2>
-            </div>
-        </a>
+    <div class="container-serv">
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+        </div>
+        <div class="box-contenido">
+          <h3>Productos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+        </div>
+        <div class="box-contenido">
+          <h3>Productos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+        </div>
+        <div class="box-contenido">
+          <h3>Productos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 </section>
 
 {{--###################### SERVICIOS ######################--}}
-<section class="section" id="part3">
-    <h1 class="section_title">SERVICIOS</h1>
-    <div class="container-prod">
-        <div class="categoria_unidad">
-           <img src="image/mantenimiento-Servicio.jpg">
-           <h4>Mantenimiento General</h4>
-           <a href="#">Ver más</a>
+<section class="section">
+<h1 class="section_title"><span>SERVICIOS</span></h1>
+<div class="container-serv">
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
         </div>
-
-        <div class="categoria_unidad">
-            <img src="image/instalacion-Servicio.jpg">
-            <h4>Instalacion de GLP</h4>
-            <a href="#">Ver más</a>
+        <div class="box-contenido">
+          <h3>Mantenimiento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
-        <div class="categoria_unidad">
-            <img src="image/limpieza-Servicio.jpg">
-            <h4>Limpieza</h4>
-            <a href="#">Ver más</a>
+      </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
         </div>
+        <div class="box-contenido">
+          <h3>Mantenimiento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="box-all">
+        <div class="imgBx">
+          <img src="image/mantenimiento-Servicio.jpg">
+        </div>
+        <div class="box-contenido">
+          <h3>Mantenimiento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 </section>
 
-{{--###################### OPINIONES ######################--}}
-<section class="section section_opiniones" id="part4">
-    <h1 class="section_title" >OPINIONES</h1>
-    <div class="usuario">
-      <img src="image/usuario-Opinion.jpg">
-      <h2>Nombre</h2>
-    </div>
-    <br>
-    <br>
-    <div class="usuario">
-        <img src="image/usuario-Opinion.jpg" alt="imagen usuario">
-        <h2>Nombre</h2>
-    </div>
+<!---comentarios--->
+<section class="section">
+<div class="comentarios">
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gas-laravel-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 </section>
+
+<!--- fin de comentarios--->
 
 {{--###################### FOOTER ######################--}}
 <footer class="footer">
     <div class="container-footer">
-        <div class="row">
+    <img src="image/logo.png" width="200px" height="50px">
+        <div class="row">           
             <div class="footer-col">
-                <h4>company</h4>
+                <h4>Nuestra Empresa</h4>
                 <ul class="texto-footer">
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">affiliate program</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Programa de afiliacion</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>get help</h4>
-                <ul class="texto-footer">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">shipping</a></li>
-                    <li><a href="#">returns</a></li>
-                    <li><a href="#">order status</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>online shop</h4>
-                <ul class="texto-footer">
-                    <li><a href="#">watch</a></li>
-                    <li><a href="#">bag</a></li>
-                    <li><a href="#">shoes</a></li>
-                    <li><a href="#">dress</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>follow us</h4>
+                <h4>Redes sociales</h4>
                 <div class="redes-sociales">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f redes"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7145459324865!2d-77.06171164185717!3d-11.
+                999511662404307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5
+                e0!3m2!1ses-419!2spe!4v1631155762892!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div class="container2-footer">
+            <div class="copyright">
+             ©  2021 Todos los derechos reservados              
+            </div>
+            <div class="terminos-footer">
+                <a>POLITICA DE PRIVACIDAD</a> | <a>TERMINOS Y CONDICIONES</a>
             </div>
         </div>
     </div>

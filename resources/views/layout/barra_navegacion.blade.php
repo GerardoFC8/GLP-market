@@ -5,8 +5,7 @@
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
                 </label>
-                <img src="image/logo.png" alt="" width="100px">
-
+                <a onclick="window.location='index'"><img src="image/logo.png" alt="" width="100px"></a>
                 <ul class="menu-box">
                     <li class="active li-nav1 menu-item" data-url="nosotros">
                         <button role="link" onclick="window.location='#'" class="navbutton">
@@ -36,7 +35,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="contacto">
-                        <button role="link" onclick="window.location='#'" class="navbutton">
+                        <button role="link" onclick="window.location='contacto'" class="navbutton">
                             <span class="material-icons-outlined iconnav">
                                 call
                             </span>
