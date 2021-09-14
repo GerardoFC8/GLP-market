@@ -25,7 +25,7 @@
 <div class="sobre_nosotros">
     <div class="sobre_n_text">
         <h1>Sobre nosotros.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ea, et corrupti incidunt, quae vero delectus maiores animi consequatur, ipsam quibusdam assumenda! Eos, laborum reprehenderit tenetur libero nulla iure officia sunt</p>
+        <p>Somos una empresa dedicada al transporte, a la distribución y comercialización de combustible y otros productos derivados del petróleo y a ofrecer nuestros servicios con la finalidad de poder satisfacer las necesidades de cada uno de nuestros clientes. Contamos con una gran red de distribuidores de combustible en todo Lima y a nivel nacional.</p>
     </div>
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.64359146641!2d-77.06453438484249!3d-11.99914529149905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5e0!3m2!1sen!2spe!4v1631381026332!5m2!1sen!2spe" 
@@ -45,7 +45,7 @@
 {{--###################### PRODUCTOS ######################--}}
 <section class="section section_productos" id="section_productos">
     <h1 class="section_title"><span>PRODUCTOS</span></h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis quasi sapiente laboriosam quod qui! Veniam eligendi qui iusto nobis.</h2>
+    <h2>El trabajo conjunto con nuestros proveedores nos permite ofrecer una amplia variedad de productos de distintas marcas con la mejor calidad siempre.</h2>
     <div class="lista_marcas">
         <div class="lista_marcas_container">
             <img src="image/marca_logo1.png" alt="marca">
@@ -62,154 +62,122 @@
     </div>
 
     <div class="categorias_container">
-        <div class="container-serv">
-        <a href="/productos?filtro=LLANTAS+Y+AROS">
-            <div class="box-all">
-            <div class="imgBx">
-                <img src="image/mantenimiento-Servicio.jpg">
-            </div>
-            <div class="box-contenido">
-                <h3>LLANTAS Y AROS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            </div>
-        </a>
+        <div class="container_unidad">
+            <a href="/productos?filtro=LLANTAS+Y+AROS">
+                <div class="box-all">
+                    <div class="imgBx">
+                        <img src="image/llantas-aros.jpg" alt="imagen categoria producto">
+                    </div>
+                    <div class="box-contenido">
+                        <h3>LLANTAS Y AROS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    </div>
+                </div>
+            </a>
         </div>
             
-        <div class="container-serv">
-        <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
-            <div class="box-all">
-                <div class="imgBx">
-                    <img src="image/mantenimiento-Servicio.jpg">
+        <div class="container_unidad">
+            <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
+                <div class="box-all">
+                    <div class="imgBx">
+                        <img src="image/bateria.jpg" alt="imagen categoria producto">
+                    </div>
+                    <div class="box-contenido">
+                        <h3>BATERIAS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    </div>
                 </div>
-                <div class="box-contenido">
-                    <h3>BATERIAS PARA AUTOS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </a>
+            </a>
         </div>
 
-        <div class="container-serv">
-        <a href="/productos?filtro=AUDIO+Y+VIDEO">
-            <div class="box-all">
-                <div class="imgBx">
-                    <img src="image/mantenimiento-Servicio.jpg">
+        <div class="container_unidad">
+            <a href="/productos?filtro=AUDIO+Y+VIDEO">
+                <div class="box-all">
+                    <div class="imgBx">
+                        <img src="image/radios.png" alt="imagen categoria producto">
+                    </div>
+                    <div class="box-contenido">
+                        <h3>AUDIO Y VIDEO</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    </div>
                 </div>
-                <div class="box-contenido">
-                    <h3>AUDIO Y VIDEO</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </a>
+            </a>
         </div>
 
-        <div class="container-serv">
-        <a href="/productos?filtro=LIMPIEZA">
-            <div class="box-all">
-            <div class="imgBx">
-                <img src="image/mantenimiento-Servicio.jpg">
-                
-            </div>
-            <div class="box-contenido">
-                <h3>LIMPIEZA</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            </div>
-        </a>
+        <div class="container_unidad">
+            <a href="/productos?filtro=LIMPIEZA">
+                <div class="box-all">
+                    <div class="imgBx">
+                        <img src="image/limpieza.jpg" alt="imagen categoria producto">
+                        
+                    </div>
+                    <div class="box-contenido">
+                        <h3>LIMPIEZA</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    </div>
+                </div>
+            </a>
         </div>
 
-        <div class="container-serv">
-        <a href="/productos?filtro=Herramientas">
-            <div class="box-all">
-                <div class="imgBx">
-                    <img src="image/mantenimiento-Servicio.jpg">
+        <div class="container_unidad">
+            <a href="/productos?filtro=Herramientas">
+                <div class="box-all">
+                    <div class="imgBx">
+                        <img src="image/herramientas.jpg" alt="imagen categoria producto">
+                    </div>
+                    <div class="box-contenido">
+                        <h3>HERRAMIENTAS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                    </div>
                 </div>
-                <div class="box-contenido">
-                    <h3>HERRAMIENTAS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </a>
+            </a>
         </div>
 
     </div>
 </section>
+
 
 {{--###################### SERVICIOS ######################--}}
-
-
 <section class="section section_servicios">
-<h1 class="section_title"><span>SERVICIOS</span></h1>
-<div class="container-serv">     
-    @foreach($servicios as $servicio)
-    <div class="box-all">
-        <div class="imgBx">
-            <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
-        </div>
-        <div class="box-contenido">
-            <h4>{{ $servicio->nombre }}</h4>
-            <p>{{ $servicio->descripcion }}</p>
-        </div>
+    <h1 class="section_title"><span>SERVICIOS</span></h1>
+    <h2>Nuestro compromiso con todos nuestros clientes nos impulsa a brindar siempre un trabajo permanente, eficiente y seguro; brindando lo mejor de nuestros servicios en todo momento.</h2>
+    <div class="categorias_container" style="margin-top: 3em;">
+        @foreach($servicios as $servicio)
+            <div class="container_unidad">
+                <a href="#">
+                    <div class="box-all">
+                        <div class="imgBx">
+                            <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
+                        </div>
+                        <div class="box-contenido">
+                            <h3>{{ $servicio->nombre }}</h3>
+                            <p>{{ $servicio->descripcion }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        @endforeach
     </div>
-    @endforeach
-</div>
 </section>
 
-<!---comentarios--->
-<section class="section">
-<div class="comentarios">
-<div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://gas-laravel-1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+{{--###################### COMENTARIOS ######################--}}
+<section class="section section_comentarios">
+    <h1 class="section_title"><span>Nuestros clientes</span></h1>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis quasi sapiente laboriosam quod qui! Veniam eligendi qui iusto nobis.</h2>
+
+    <div class="comentarios">
+        <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://gas-laravel-1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 </section>
 
-<!--- fin de comentarios--->
-
-{{--###################### FOOTER ######################--}}
-<footer class="footer">
-    <div class="container-footer">
-    <img src="image/logo.png" width="200px" height="50px">
-        <div class="row">           
-            <div class="footer-col">
-                <h4>Nuestra Empresa</h4>
-                <ul class="texto-footer">
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Nuestros servicios</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">Programa de afiliacion</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Redes sociales</h4>
-                <div class="redes-sociales">
-                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f redes"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.7145459324865!2d-77.06171164185717!3d-11.
-                999511662404307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce568c042771%3A0x6072f46c2b26e80!2sSENATI!5
-                e0!3m2!1ses-419!2spe!4v1631155762892!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-        <div class="container2-footer">
-            <div class="copyright">
-             ©  2021 Todos los derechos reservados              
-            </div>
-            <div class="terminos-footer">
-                <a>POLITICA DE PRIVACIDAD</a> | <a>TERMINOS Y CONDICIONES</a>
-            </div>
-        </div>
-    </div>
-</footer>
-
+@include('layout.footer')
 @endsection
