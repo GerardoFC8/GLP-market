@@ -5,9 +5,7 @@
 @section('estilo_propio', 'css/productos.css')
 {{--@section('responsive', 'css/index_responsive.css');--}}
 @include('layout.barra_navegacion')
-@section('sub_barra')
-    @include('layout.sub_barra_navegacion')
-@endsection
+
 @section('content')
 <section class="section section_productos" id="section_productos">
     <h1 class="section_title">

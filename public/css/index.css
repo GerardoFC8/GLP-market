@@ -200,7 +200,7 @@
     left: 10%;
     width: 80%;
     height: 60px;
-    background: var(--fushia);
+    background: #000000bf;
     transition: 0.3s;
     overflow: hidden;
     color: var(--white);

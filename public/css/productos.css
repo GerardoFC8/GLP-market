@@ -56,7 +56,7 @@
     bottom: 0;
     width: 100%;
     height: 70px;
-    background: var(--fushia_transparente);
+    background: #000000bf;;
     transition: 0.2s;
     overflow: hidden;
     color: var(--white);

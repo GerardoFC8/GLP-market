@@ -4,7 +4,6 @@
 {{--@section('responsive', 'css/index_responsive.css');--}}
 
 @section('content')
-
 {{--###################### MAIN SECTION ######################--}}
 <section class="section_main" id="main_screen">
     <div class="main_container">

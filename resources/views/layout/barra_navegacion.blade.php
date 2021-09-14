@@ -76,7 +76,7 @@
             </nav>
 
             {{--###################### SUB BARRA NAVEGACION ######################--}}
-           @yield('sub_barra')
+           @includeIf('view.productos', ['productos' => 'productos'])('layout.sub_barra')
         </div>
     </header>
 <script src="js/barra_carro.js"></script>
