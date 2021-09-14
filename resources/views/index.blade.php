@@ -69,21 +69,21 @@
                     </div>
                     <div class="box-contenido">
                         <h3>LLANTAS Y AROS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                        <p>Tenemos todas las llantas de autos en sus diferentes tamaños y en distintas marcas.</p>
                     </div>
                 </div>
             </a>
         </div>
             
         <div class="container_unidad">
-            <a href="/productos?filtro=BATERIAS+PARA+AUTOS">
+            <a href="/productos?filtro=BATERIAS">
                 <div class="box-all">
                     <div class="imgBx">
                         <img src="image/bateria.jpg" alt="imagen categoria producto">
                     </div>
                     <div class="box-contenido">
                         <h3>BATERIAS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                        <p>Contamos con las mejores baterías de todas las marcas para los distintos tipos de autos.</p>
                     </div>
                 </div>
             </a>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="box-contenido">
                         <h3>AUDIO Y VIDEO</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                        <p>Encuentra la mayor variedad de dispositivos multimedias aquí de acuerdo a tus gustos.</p>
                     </div>
                 </div>
             </a>
@@ -112,7 +112,7 @@
                     </div>
                     <div class="box-contenido">
                         <h3>LIMPIEZA</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                        <p>Manten tu auto limpio y nuevo siempre con los mejores productos de limpieza.</p>
                     </div>
                 </div>
             </a>
@@ -126,7 +126,7 @@
                     </div>
                     <div class="box-contenido">
                         <h3>HERRAMIENTAS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                        <p>Descubre las herramientas para tu autoque tanto estabas buscando en un solo lugar.</p>
                     </div>
                 </div>
             </a>
