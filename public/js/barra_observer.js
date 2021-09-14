@@ -14,8 +14,7 @@ window.addEventListener("scroll", () => {
         compensar.classList.remove("compensar");
     }
 
-
     // parallax
     document.querySelector(".container-img img").style.paddingBottom = scrolled * .6 + "px";
-    
+
 });

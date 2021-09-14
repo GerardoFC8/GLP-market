@@ -5,7 +5,7 @@
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
                 </label>
-                <img src="image/logo.png" alt="logo barra" width="100px" style="margin-right: 1em;" onClick="window.location.href='http://localhost:8000/'">
+                <img src="image/logo.png" alt="logo barra" width="100px" onClick="window.location.href='http://localhost:8000/'">
 
 
                 <ul class="menu-box">
@@ -76,7 +76,9 @@
             </nav>
 
             {{--###################### SUB BARRA NAVEGACION ######################--}}
-           @includeIf('view.productos', ['productos' => 'productos'])('layout.sub_barra')
+            @if(isset($productos))
+                @include('layout.sub_barra_navegacion')
+            @endif
         </div>
     </header>
 <script src="js/barra_carro.js"></script>
