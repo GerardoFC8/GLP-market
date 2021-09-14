@@ -157,12 +157,12 @@
         @endforeach
     </div>
 	</div>
+{{--################### COTIZAR #####################--}}    
   <section>
   <div class="contenedor">
 		<article>
 			<button id="btn-abrir-popup" class="btn-abrir-popup">COTIZAR</button>
 		</article>
-
 		<div class="overlay" id="overlay">
 			<div class="popup" id="popup">
 				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
@@ -181,6 +181,7 @@
 	</div>
       <script src="js/popup.js"></script>
 </section>
+{{--################### WSP #####################--}}    
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <a href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
