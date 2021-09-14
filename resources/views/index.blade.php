@@ -9,7 +9,7 @@
     <div class="main_container">
         <div class="container-frase">
             <h1>
-                <span>Lorem ipsum dolor sit amet, consectetur.</span>
+                <span>Queremos despertar pasión por el gas GLP.</span>
             </h1>
         </div>
         <div class="container-img">
@@ -147,7 +147,7 @@
                         <div class="imgBx">
                             <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
                         </div>
-                        <div class="box-contenido">
+                        <div class="box-contenido servicios">
                             <h3>{{ $servicio->nombre }}</h3>
                             <p>{{ $servicio->descripcion }}</p>
                         </div>
@@ -157,9 +157,11 @@
         @endforeach
     </div>
 	</div>
-{{--################### COTIZAR #####################--}}    
-  <section>
-  <div class="contenedor">
+
+
+    {{--################### COTIZAR #####################--}}    
+<section>
+    <div class="contenedor">
 		<article>
 			<button id="btn-abrir-popup" class="btn-abrir-popup">COTIZAR</button>
 		</article>
@@ -179,17 +181,18 @@
 			</div>
 		</div>
 	</div>
-      <script src="js/popup.js"></script>
+    <script src="js/popup.js"></script>
 </section>
-{{--################### WSP #####################--}}    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
+
+<a id="boton_wsp" href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">
+    <span class="material-icons-outlined">
+        whatsapp
+    </span>
 </a>
 {{--###################### COMENTARIOS ######################--}}
 <section class="section section_comentarios">
     <h1 class="section_title"><span>Nuestros clientes</span></h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis quasi sapiente laboriosam quod qui! Veniam eligendi qui iusto nobis.</h2>
+    <h2>Tu opinión es muy importante para nosotros. Déjanos tu comentario para seguir mejorando y brindarte mejor nuestros servicios.</h2>
 
     <div class="comentarios">
         <div id="disqus_thread"></div>

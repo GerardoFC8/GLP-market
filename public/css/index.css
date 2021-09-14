@@ -207,6 +207,10 @@
     padding: 2em;
     box-sizing: border-box;
 }
+
+.box-all .box-contenido.servicios{
+    height: 80px;
+}
   
 .box-all:hover .box-contenido {
     width: 100%;
@@ -224,6 +228,10 @@
     text-decoration: underline;
     text-underline-offset: 3px;
     letter-spacing: .15em;
+}
+
+.box-all .box-contenido.servicios h3{
+    font-size: 1rem;    
 }
   
 .box-all .box-contenido p {
@@ -427,8 +435,8 @@
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
+.popup.active h3 { animation: entradaTitulo .3s ease .1s forwards; }
+.popup.active h4 { animation: entradaSubtitulo .3s ease .s forwards; }
 .popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
 
 @keyframes entradaTitulo {
