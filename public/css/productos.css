@@ -1,3 +1,148 @@
-.section_productos{
+.section{
+    padding: 0 0 100px 0;
+}
+
+.section .section_title{
+    font-size: var(--fz_titulos);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+
+    color: var(--white);
+    text-align: center;
+    padding: 10vh 0 0;
+
+    border-bottom: 3px solid var(--fushia);
+}
+
+.container_productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 0 0;
+    margin-top: 10vh;
+}
+
+.box-all {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: var(--void);
+}
+  
+.box-all .imgBx {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+}
+  
+.box-all .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.1s;
+}
+  
+.box-all:hover .imgBx img {
+    opacity: .5;
+}
+  
+.box-all .box-contenido {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #000000bf;;
+    transition: 0.2s;
+    overflow: hidden;
+    color: var(--white);
+    padding: 1em;
+    box-sizing: border-box;
+}
+  
+.box-all:hover .box-contenido {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 1em 0;
+
+    display: grid;
+    place-items: center;
+}
+  
+.box-all .box-contenido h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .15em;
+}
+  
+.box-all .box-contenido p {
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.6em;
+    letter-spacing: .125em;
+}
+
+.box-all .box-contenido h2{
+    font-size: 2rem;
+
+    margin: 0 0 20px 0;
+    background-color: rgba(72, 255, 0, 0.466);
+    font-family: arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+  
+.box-all:hover .box-contenido p,
+.box-all:hover .box-contenido h3,
+.box-all:hover .box-contenido h2{
+    padding: .25em 2em;
+    opacity: 1;
+}
+.box-all:hover .box-contenido h3{
+    font-size: 1.5rem;
+}
+
+.agregar_carro{
+    font-size: 1rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: .125em;
+    text-decoration: underline .15em solid white;
+    text-underline-offset: 8px;
+
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.agregar_carro:hover{
+    letter-spacing: .25em;
+    background: white;
+    color: var(--fushia);
+
+}
+
+.texto_agregar{
+    height: 80px;
+    width: 300px;
+    border: 1px solid white;
+    
+    display: grid;
+    place-items: center;
 }

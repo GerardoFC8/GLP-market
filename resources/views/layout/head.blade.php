@@ -12,15 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,400;0,700;0,900;1,700;1,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,200;1,500;1,600;1,800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="image/icono.ico" rel="icono">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/barra_navegacion.css">
     <link rel="stylesheet" href="css/sub_barra_navegacion.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="@yield('estilo_propio')">
     <link rel="stylesheet" href="@yield('responsive')">

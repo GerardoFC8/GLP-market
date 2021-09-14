@@ -1,3 +1,18 @@
+.titulo-contac{
+    height: 125px;
+    font-size: var(--fz_titulos);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+
+    /* color: var(--gris_text); */
+    color: var(--white_sub);
+    text-align: center;
+    padding: 1em 0 0 0;
+
+    border-bottom: 3px solid var(--fushia);
+}
+
 
 .container {
     margin-top: 50px;

@@ -1,4 +1,4 @@
-<section class="secondbar" id="secondbar" style="visibility: hidden;">
+<section class="secondbar" id="secondbar">
     <div class="barra2" id="barra2">
         <nav class="nav2">
             <ul class="menu-box-nav2">
