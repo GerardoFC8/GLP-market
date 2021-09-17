@@ -68,7 +68,6 @@
                         </div>
                     </li>
 
-
                 {{--###################### CARRITO ######################--}}
                     <figcaption>
                         <li class="icono li-nav1" id="icono">
@@ -98,6 +97,22 @@
             @endif
         </div>
     </header>
+<script>
+    window.onload = function() {
+        const to = window.location.search;
+        const urlParams = new URLSearchParams(to);
+        const item = urlParams.get('to');
+
+        if(item !== null){
+            const adonde = document.getElementById(item);
+            adonde.scrollIntoView({behavior:"smooth", block:"start"});
+
+            console.log(adonde);
+        }
+
+    };
+</script>
 <script src="js/barra_carro.js"></script>
 <script src="js/botones_barra_navegacion.js"></script>
 <script src="js/barra_observer.js"></script>
+

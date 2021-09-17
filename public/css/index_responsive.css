@@ -1,0 +1,14 @@
+@media all and (max-width:1000px){
+    /*  BARRA */
+    .sticky .barra{
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 10;
+    }
+
+    
+
+    /*  END BARRA */
+}
