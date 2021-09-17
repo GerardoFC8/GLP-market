@@ -19,73 +19,28 @@ class ServiciosController extends Controller
         $productos = \DB::table('productos')
                     ->select('productos.*')
                     ->where('Categoria', 'like','%'.$filtro.'%')
+                    ->orwhere('Nombre', 'like','%'.$filtro.'%')
+                    ->orwhere('Descripcion', 'like','%'.$filtro.'%')
                     ->get();
         return view('productos')-> with('productos', $productos);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         //
+        $filtro = $request->get('filtro');
+        $productos = \DB::table('productos')
+                    ->select('productos.*')
+                    ->where('Categoria', 'like','%'.$filtro.'%')
+                    ->orwhere('Nombre', 'like','%'.$filtro.'%')
+                    ->orwhere('Descripcion', 'like','%'.$filtro.'%')
+                    ->get();
+        return view('productos')-> with('productos', $productos);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\servicios  $servicios
-     * @return \Illuminate\Http\Response
-     */
-    public function show(servicios $servicios)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\servicios  $servicios
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(servicios $servicios)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\servicios  $servicios
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, servicios $servicios)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\servicios  $servicios
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(servicios $servicios)
-    {
-        //
-    }
 }

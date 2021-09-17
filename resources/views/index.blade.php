@@ -21,7 +21,7 @@
 {{--###################### BARRA DE NAVEGACION ######################--}}
 @include('layout.barra_navegacion')
 {{--###################### SOBRE NOSOTROS ######################--}}
-<div class="sobre_nosotros">
+<div class="sobre_nosotros" id="seccion1">
     <div class="sobre_n_text">
         <h1>Sobre nosotros.</h1>
         <p>Somos una empresa dedicada al transporte, a la distribución y comercialización de combustible y otros productos derivados del petróleo y a ofrecer nuestros servicios con la finalidad de poder satisfacer las necesidades de cada uno de nuestros clientes. Contamos con una gran red de distribuidores de combustible en todo Lima y a nivel nacional.</p>
@@ -42,7 +42,7 @@
 </section>
 
 {{--###################### PRODUCTOS ######################--}}
-<section class="section section_productos" id="section_productos">
+<section class="section section_productos" id="seccion2">
     <h1 class="section_title"><span>PRODUCTOS</span></h1>
     <h2>El trabajo conjunto con nuestros proveedores nos permite ofrecer una amplia variedad de productos de distintas marcas con la mejor calidad siempre.</h2>
     <div class="lista_marcas">
@@ -74,7 +74,7 @@
                 </div>
             </a>
         </div>
-            
+    
         <div class="container_unidad">
             <a href="/productos?filtro=BATERIAS">
                 <div class="box-all">
@@ -136,10 +136,11 @@
 </section>
 
 {{--###################### SERVICIOS ######################--}}
-<section class="section section_servicios">
+<section class="section section_servicios" id="seccion3">
     <h1 class="section_title"><span>SERVICIOS</span></h1>
     <h2>Nuestro compromiso con todos nuestros clientes nos impulsa a brindar siempre un trabajo permanente, eficiente y seguro; brindando lo mejor de nuestros servicios en todo momento.</h2>
     <div class="categorias_container" style="margin-top: 3em;">
+
         @foreach($servicios as $servicio)
             <div class="container_unidad">
                 <a href="#">
@@ -155,6 +156,7 @@
                 </a>
             </div>
         @endforeach
+
     </div>
 	</div>
 

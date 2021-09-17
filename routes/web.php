@@ -33,3 +33,7 @@ Route::get('/detalles', function () {
     return view('productos_detalle');
 });
 Route::resource('/detalles', ServiciosController::class);
+
+Route::get('/cart', function () {
+    return view('cart');
+});
