@@ -74,7 +74,7 @@
                 </div>
             </a>
         </div>
-            
+    
         <div class="container_unidad">
             <a href="/productos?filtro=BATERIAS">
                 <div class="box-all">
@@ -140,6 +140,7 @@
     <h1 class="section_title"><span>SERVICIOS</span></h1>
     <h2>Nuestro compromiso con todos nuestros clientes nos impulsa a brindar siempre un trabajo permanente, eficiente y seguro; brindando lo mejor de nuestros servicios en todo momento.</h2>
     <div class="categorias_container" style="margin-top: 3em;">
+
         @foreach($servicios as $servicio)
             <div class="container_unidad">
                 <a href="#">
@@ -155,6 +156,7 @@
                 </a>
             </div>
         @endforeach
+
     </div>
 	</div>
 {{--################### COTIZAR #####################--}}    

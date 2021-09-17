@@ -38,18 +38,39 @@
                         <p>{{ $product->Descripcion }}</p>
                         <h2>S/.{{ $product->Precio }}</h2>
 
-                        <a href="#" class="agregar_carro">
+                        <form action="" method="post">
+                            @csrf
+                            <input type="hidden" name="producto" value="{{ $product->Nombre }}">
+                            <input type="hidden" name="Precio" value="{{ $product->Precio }}">
+                            <input type="number" name="cantidad" value="1">
+                            <input type="submit" value="Agregar al carrito" name="btnAgregar">
+                        </form>
+                        <a href="{{ url('add-cart/'.$product->id) }}" class="agregar_carro">
                             <div class="texto_agregar">
-                                    <span>Agregar al carrito</span>
+                                <span>Agregar al carrito</span>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         @endforeach
-
+            
     </div>
 
 </section>
+
+<?php 
+    if (isset($_REQUEST["btnAgregar"])) {
+        $producto = $_REQUEST["producto"];
+        $precio = $_REQUEST["Precio"];
+        $cantidad = $_REQUEST["cantidad"];
+
+        $_SESSION["carrito"][$producto]["cantidad"] = $cantidad;
+        $_SESSION["carrito"][$producto]["precio"] = $precio;
+        
+        echo "<script>alert('Producto $producto agregado con exito al carrito de compras');</script>";
+    }
+?>
+
 @include('layout.footer')
 @endsection

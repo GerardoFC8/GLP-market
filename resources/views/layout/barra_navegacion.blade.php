@@ -46,11 +46,25 @@
                     </li>
 
                     <li class="active li-nav1 menu-item">
-                        <button role="link" onclick="window.location='#'" class="active navbuttonE">
+                        <a href="#miModal" class="active navbuttonE">
                             <span class="material-icons-outlined iconnavE">
                                 search
                             </span>
-                        </button>
+                        </a>
+                                <div id="miModal" class="modal">
+                                  <div class="modal-contenido">
+                                    
+                                    <div>
+                                        
+                                        <form action="/productos?" method="get">
+                                            <input type="text" name="filtro">
+                                            <button type="submit">Buscar</button>
+                                        </form>
+                                        <a href="#">X</a>
+                                    </div>    
+                                  </div>  
+                                </div>
+                        
                     </li>
 
 
@@ -59,13 +73,9 @@
                         <li class="icono li-nav1" id="icono"><button role="link" onclick="window.location='#'" class="active navbuttonE"><span class="material-icons-outlined iconnavE">shopping_cart</span></button></li>
                         <div class="tooltip" id="tooltip">
                             <div class="info">
-                                <h3 class="titulo">Producto</h3>
-                                <p class="producto">
-                                    Nombre:    ....... <br>
-                                    Precio:    ....... <br>
-                                    Cantidad:  ....... <br>
-                                    Total:     .......
-                                </p>
+
+                                @include('cart')
+                                
                                 <div class="contenedor-btn">
                                     <button>Comprar</button>
                                 </div>
