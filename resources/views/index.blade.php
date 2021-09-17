@@ -143,7 +143,7 @@
 
         @foreach($servicios as $servicio)
             <div class="container_unidad">
-                <a href="#">
+                <a href="#" onclick="toggle()">
                     <div class="box-all">
                         <div class="imgBx">
                             <img src="data:image/jpg;base64,<?php echo(base64_encode($servicio->imagen))?>" alt="" width="200px"> 
