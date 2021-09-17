@@ -107,8 +107,7 @@
             <a href="/productos?filtro=LIMPIEZA">
                 <div class="box-all">
                     <div class="imgBx">
-                        <img src="image/limpieza.jpg" alt="imagen categoria producto">
-                        
+                        <img src="image/limpieza.jpg" alt="imagen categoria producto">                   
                     </div>
                     <div class="box-contenido">
                         <h3>LIMPIEZA</h3>
