@@ -31,26 +31,39 @@
 @yield('content')
 </body>
 <script>
-    var url = window.location.href;
-
     switch(true) {
-    case (url.indexOf("productos") != -1):
+    case (window.location.href.indexOf("productos") != -1):
         document.getElementById("main_producto").style.backgroundColor = "var(--fushia)";
         break;
 
-    case (url.indexOf("contacto") != -1):
+    case (window.location.href.indexOf("contacto") != -1):
         document.getElementById("main_contacto").style.backgroundColor = "var(--fushia)";
         break;
-
-    case (url.indexOf("BATERIA") != -1):
+    }
+    
+    switch(true) {
+    case (window.location.href.indexOf("BATERIAS") != -1):
         document.getElementById("sub_bateria").style.backgroundColor = "var(--fushia)";
         break;
-        
-    case (url.indexOf("carro") != -1):
-        btn_actual = document.getElementById("btn-carro");
-        btn_actual.style.backgroundColor = "#fc3a52";
+
+    case (window.location.href.indexOf("LLANTAS") != -1):
+        document.getElementById("sub_aros").style.backgroundColor = "var(--fushia)";
         break;
-}
+
+    case (window.location.href.indexOf("AUDIO") != -1):
+        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        break;
+    
+
+    case (window.location.href.indexOf("LIMPIEZA") != -1):
+        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        break;
+    
+
+    case (window.location.href.indexOf("Herramientas") != -1):
+        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        break;
+    }
 </script>
 </html>
 
