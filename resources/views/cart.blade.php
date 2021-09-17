@@ -8,12 +8,12 @@
     if (isset($_SESSION['carrito'])){
 ?>
         <table  border='1'>
-        <thead>
+        {{-- <thead>
             <th>Producto</th>
             <th>Cantidad</th>
             <th>Precio</th>
             <th>Accion</th>
-        </thead>
+        </thead> --}}
         <tbody>
 <?php
         foreach($_SESSION["carrito"] as $indice => $arreglo){
@@ -25,21 +25,21 @@
                 <?php foreach ($arreglo as $key => $value) { ?>
                 <td>{{ $key.": " . $value }}</td>
                 <?php } ?>
-                <td><a href='cart?item=$indice'>Eliminar Producto</a></td>
+                <td><a href='cart?item=$indice'>Eliminar</a></td>
             </tr>
 
             
             <br><br>
 <?php        } ?>
             <tr>
-                <td colspan="3">El total de la compra es S/.{{$total}}</td>
+                <td colspan="4" class="td_total">- El total de la compra es S/.{{$total}} -</td>
             </tr>
         
-            <tr>
+            {{-- <tr>
                 <td colspan="4">
-                    <a href="cart?vaciar=true">Vaciar carrito</a>
+                    <a href="cart?vaciar=true" class="td_vaciar">Vaciar carrito</a>
                 </td>
-            </tr>
+            </tr> --}}
             
         </tbody>
     </table>

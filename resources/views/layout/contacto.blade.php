@@ -1,5 +1,5 @@
 @extends('layout.head')
-@section('page_name', '𝙂𝙖𝙨 𝙇𝙖𝙧𝙖𝙫𝙚𝙡')
+@section('page_name', '𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙖𝙣𝙤𝙨')
 @section('estilo_propio', 'css/contacto.css')
 {{--@section('responsive', 'css/index_responsive.css');--}}
 
@@ -9,7 +9,20 @@
 @include('layout.barra_navegacion')
 
 <div class="container">
-    <h1 class="titulo-contac">CONTACTANOS<h1>
+    <h1 class="titulo-contac seccioncompensadora">CONTáCTANOS<h1>
+    <script>
+        //EVENTO PARA COMPENSAR FLOAT BAR
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+
+            if (window.pageYOffset > header.offsetTop) {
+                document.querySelector(".seccioncompensadora").classList.add("compensar");
+
+            }else{
+                document.querySelector(".seccioncompensadora").classList.remove("compensar");
+            }
+        });
+    </script>
     <div class="contact-wrapper">
         <div class="contact-form">
             <form action="">

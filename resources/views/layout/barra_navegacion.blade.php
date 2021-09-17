@@ -5,7 +5,7 @@
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
                 </label>
-                <img src="image/logo.png" alt="logo barra" width="100px" onClick="window.location.href='http://localhost:8000/'">
+                <img src="image/logo.png" alt="logo barra" width="100px" onClick="window.location.href='http://localhost:8000/'" style="cursor: pointer;">
 
 
                 <ul class="menu-box">
@@ -51,26 +51,33 @@
                                 search
                             </span>
                         </a>
-                                <div id="miModal" class="modal">
-                                  <div class="modal-contenido">
-                                    
-                                    <div>
-                                        
-                                        <form action="/productos?" method="get">
-                                            <input type="text" name="filtro">
-                                            <button type="submit">Buscar</button>
-                                        </form>
-                                        <a href="#">X</a>
-                                    </div>    
-                                  </div>  
-                                </div>
-                        
+                        <div id="miModal" class="modal">
+
+                            <div class="modal-contenido">
+                                <div>
+                                    <a href="#">X</a>
+                                    <form action="/productos?" method="get">
+                                        <input type="text" name="filtro">
+                                        <button type="submit">
+                                            <span class="material-icons-outlined iconnavE">search</span>
+                                        </button>
+                                    </form>
+                                </div>    
+                            </div>
+
+                        </div>
                     </li>
 
 
                 {{--###################### CARRITO ######################--}}
                     <figcaption>
-                        <li class="icono li-nav1" id="icono"><button role="link" onclick="window.location='#'" class="active navbuttonE"><span class="material-icons-outlined iconnavE">shopping_cart</span></button></li>
+                        <li class="icono li-nav1" id="icono">
+                            <button role="link" class="active navbuttonE">
+                                <span class="material-icons-outlined iconnavE">
+                                    shopping_cart
+                                </span>
+                            </button>
+                        </li>
                         <div class="tooltip" id="tooltip">
                             <div class="info">
 
