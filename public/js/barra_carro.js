@@ -11,8 +11,8 @@ const calcularPosicionTooltip = () => {
     const altoTooltip = tooltip.clientHeight;
 
     //calcular el posicionamiento del tooltip
-    const izquierda = x - (anchoTooltip / 20) + 15;
-    const arriba = y + altoTooltip - 120;
+    const izquierda = x + 8;
+    const arriba = y + 60;
 
     tooltip.style.left = `${izquierda}px`;
     tooltip.style.top = `${arriba}px`;

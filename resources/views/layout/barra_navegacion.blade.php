@@ -10,7 +10,7 @@
 
                 <ul class="menu-box">
                     <li class="active li-nav1 menu-item" data-url="nosotros">
-                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion1">
+                        <button role="link" class="navbutton scrollto" data-link="seccion1">
                             <span class="material-icons-outlined iconnav">
                                 groups
                             </span>
@@ -19,7 +19,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="servicios">
-                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion2" id="main_producto">
+                        <button role="link" class="navbutton scrollto" data-link="seccion2" id="main_producto">
                             <span class="material-icons-outlined iconnav">
                                 miscellaneous_services
                             </span>
@@ -28,7 +28,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="servicios">
-                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion3">
+                        <button role="link" class="navbutton scrollto" data-link="seccion3">
                             <span class="material-icons-outlined iconnav">
                                 miscellaneous_services
                             </span>
