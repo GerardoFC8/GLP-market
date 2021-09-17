@@ -190,6 +190,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    letter-spacing: .1em;
 }
 
 .tooltip .info .titulo{

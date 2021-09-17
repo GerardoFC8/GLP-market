@@ -9,7 +9,7 @@
                     </button>
                 </li>
                 <li class="li-nav2">
-                    <button role="link" onclick="window.location='/productos?filtro=BATERIAS'" class="navbutton-nav2">
+                    <button role="link" onclick="window.location='/productos?filtro=BATERIAS'" class="navbutton-nav2" id="sub_bateria">
                         <img src="image/sub_bateria.png" alt="sub imagen"><br>
                         Baterias
                     </button>

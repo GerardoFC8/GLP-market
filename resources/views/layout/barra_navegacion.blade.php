@@ -19,7 +19,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="servicios">
-                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion2">
+                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion2" id="main_producto">
                             <span class="material-icons-outlined iconnav">
                                 miscellaneous_services
                             </span>
@@ -37,7 +37,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="contacto">
-                        <button role="link" onclick="window.location='contacto'" class="navbutton scrollto">
+                        <button role="link" onclick="window.location='contacto'" class="navbutton scrollto" id="main_contacto">
                             <span class="material-icons-outlined iconnav">
                                 call
                             </span>

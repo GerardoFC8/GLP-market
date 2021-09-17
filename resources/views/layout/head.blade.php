@@ -30,6 +30,28 @@
 <body>
 @yield('content')
 </body>
+<script>
+    var url = window.location.href;
+
+    switch(true) {
+    case (url.indexOf("productos") != -1):
+        document.getElementById("main_producto").style.backgroundColor = "var(--fushia)";
+        break;
+
+    case (url.indexOf("contacto") != -1):
+        document.getElementById("main_contacto").style.backgroundColor = "var(--fushia)";
+        break;
+
+    case (url.indexOf("BATERIA") != -1):
+        document.getElementById("sub_bateria").style.backgroundColor = "var(--fushia)";
+        break;
+        
+    case (url.indexOf("carro") != -1):
+        btn_actual = document.getElementById("btn-carro");
+        btn_actual.style.backgroundColor = "#fc3a52";
+        break;
+}
+</script>
 </html>
 
 
