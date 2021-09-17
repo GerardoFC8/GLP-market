@@ -56,12 +56,12 @@
     
 
     case (window.location.href.indexOf("LIMPIEZA") != -1):
-        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        document.getElementById("sub_limíeza").style.backgroundColor = "var(--fushia)";
         break;
     
 
     case (window.location.href.indexOf("Herramientas") != -1):
-        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        document.getElementById("sub_herramientas").style.backgroundColor = "var(--fushia)";
         break;
     }
 </script>

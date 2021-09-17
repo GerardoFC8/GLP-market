@@ -21,13 +21,13 @@
                     </button>
                 </li>
                 <li class="li-nav2">
-                    <button role="link" onclick="window.location='/productos?filtro=LIMPIEZA'" class="navbutton-nav2">
+                    <button role="link" onclick="window.location='/productos?filtro=LIMPIEZA'" class="navbutton-nav2" id="sub_limíeza">
                         <img src="image/sub_limpieza.png" alt="sub imagen"><br>
                         Limpieza
                     </button>
                 </li>
                 <li class="li-nav2">
-                    <button role="link" onclick="window.location='/productos?filtro=Herramientas'" class="navbutton-nav2">
+                    <button role="link" onclick="window.location='/productos?filtro=Herramientas'" class="navbutton-nav2" id="sub_herramientas">
                         <img src="image/sub_herr.png" alt="sub imagen"><br>
                         Herramientas
                     </button>
