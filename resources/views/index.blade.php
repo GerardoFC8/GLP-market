@@ -167,10 +167,18 @@
         <div class="content">
             <a href="#" onclick="toggle()">Saca tu cotizacion</a>
         </div>
+        <div class="float">
+            <a class="wsp-link"  href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." >
+            <span class=" icono-wsp material-icons-outlined">
+               whatsapp
+            </span>
+            <a class="wsp-text" href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">ESCRIBENOS</a>
+            </a>
+        </div>
     </div>
     <div id="popup">
         <a href="#" onclick="toggle()" class="salir">X</a> 
-        <h2>Cotizar</h2>
+        <h2 id="cotizar">Cotizar</h2>
         <div class="contact-form">
             <form action="https://formsubmit.co/diegopena0309@gmail.com" method="POST">
                 <p>
@@ -211,11 +219,6 @@
         }
     </script>
 </section>
-<a id="boton_wsp" href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">
-    <span class="material-icons-outlined">
-        whatsapp
-    </span>
-</a>
 {{--###################### COMENTARIOS ######################--}}
 <section class="section section_comentarios">
     <h1 class="section_title"><span>Nuestros clientes</span></h1>

@@ -272,28 +272,39 @@
     */
 }
 
+/* WSP */
 .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+    position: relative;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: var(--white);
+    background: #25d366;   
 }
 .float:hover {
 	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
+	color: var(--white);
 }
 
-.my-float{
-	margin-top:16px;
+.wsp-text{
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+wsp-link{
+    text-decoration: none;
+}
+
+.icono-wsp{
+    color: var(--white);
+    text-decoration: none;
 }
 
 /*========= Cotizar========*/
@@ -329,7 +340,7 @@
     border-radius: 100%;
     display: inline-block;
     text-decoration: none;
-    float: right;
+    float:right; 
 }
 
 .container#blur .active{
@@ -359,8 +370,13 @@
     transition: 0.5s;
 }
 
-#popup h2{
+#cotizar {
     color: var(--void);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 2em 20%;
+    line-height: 1.6em;
+
 }
 
 .contact-form {
@@ -418,31 +434,7 @@
     outline: 0;
 }
 
-.popup form .contenedor-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
-}
 
-.popup form .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: var(--white);
-	background: var(--fushia);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-}
 
-.popup form .btn-submit:hover {
-	background: var(--fushia);  
-}
+
 
