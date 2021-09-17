@@ -164,7 +164,7 @@
 <section class="section">   
     <div class="container" id="blur">
         <div class="content">
-            <a href="#" onclick="toggle()">Saca tu cotizacion</a>
+            <a href="#" onclick="toggle()">Calcular cotizacion</a>
         </div>
         <div class="float">
             <a class="wsp-link"  href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." >

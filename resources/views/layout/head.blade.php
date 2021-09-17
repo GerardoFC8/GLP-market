@@ -30,6 +30,41 @@
 <body>
 @yield('content')
 </body>
+<script>
+    switch(true) {
+    case (window.location.href.indexOf("productos") != -1):
+        document.getElementById("main_producto").style.backgroundColor = "var(--fushia)";
+        break;
+
+    case (window.location.href.indexOf("contacto") != -1):
+        document.getElementById("main_contacto").style.backgroundColor = "var(--fushia)";
+        break;
+    }
+    
+    switch(true) {
+    case (window.location.href.indexOf("BATERIAS") != -1):
+        document.getElementById("sub_bateria").style.backgroundColor = "var(--fushia)";
+        break;
+
+    case (window.location.href.indexOf("LLANTAS") != -1):
+        document.getElementById("sub_aros").style.backgroundColor = "var(--fushia)";
+        break;
+
+    case (window.location.href.indexOf("AUDIO") != -1):
+        document.getElementById("sub_audio").style.backgroundColor = "var(--fushia)";
+        break;
+    
+
+    case (window.location.href.indexOf("LIMPIEZA") != -1):
+        document.getElementById("sub_limíeza").style.backgroundColor = "var(--fushia)";
+        break;
+    
+
+    case (window.location.href.indexOf("Herramientas") != -1):
+        document.getElementById("sub_herramientas").style.backgroundColor = "var(--fushia)";
+        break;
+    }
+</script>
 </html>
 
 
