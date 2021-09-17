@@ -75,7 +75,6 @@
     bottom: 0;
     left: 0;
     padding: 1em 0;
-
     display: grid;
     place-items: center;
 }
@@ -123,7 +122,6 @@
 
 .agregar_carro{
     font-size: 1rem;
-
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -148,7 +146,23 @@
     height: 80px;
     width: 300px;
     border: 1px solid white;
-
     display: grid;
     place-items: center;
+}
+
+
+.box-contenido input[type="submit"]{
+    text-decoration: none;
+    background: var(--fushia);
+    color: var(--white);
+    border-radius: 25px;
+    height: 20px;
+    width: 150px;
+    text-decoration: none;
+    border: 0px;
+}
+
+.box-contenido input[type="submit"]:hover{
+    background: var(--white);
+    color: var(--fushia);
 }
