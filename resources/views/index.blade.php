@@ -160,30 +160,55 @@
 
 
     {{--################### COTIZAR #####################--}}    
-<section>
-    <div class="contenedor">
-		<article>
-			<button id="btn-abrir-popup" class="btn-abrir-popup">COTIZAR</button>
-		</article>
-		<div class="overlay" id="overlay">
-			<div class="popup" id="popup">
-				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-				<h3>COTIZAR</h3>
-				<form action="">
-					<div class="contenedor-inputs">
-						<input type="text" placeholder="Nombres y Apellidos">
-						<input type="email" placeholder="Correo">
-						<input type="text" placeholder="Telefono">
-						<textarea name="mensaje"></textarea>
-					</div>
-					<input type="submit" class="btn-submit" value="Cotizar">
-				</form>
-			</div>
-		</div>
-	</div>
-    <script src="js/popup.js"></script>
+<section class="section">   
+    <div class="container" id="blur">
+        <div class="content">
+            <a href="#" onclick="toggle()">Saca tu cotizacion</a>
+        </div>
+    </div>
+    <div id="popup">
+        <a href="#" onclick="toggle()" class="salir">X</a> 
+        <h2>Cotizar</h2>
+        <div class="contact-form">
+            <form action="https://formsubmit.co/diegopena0309@gmail.com" method="POST">
+                <p>
+                    <label>Nombres</label>
+                    <input type="text" name="fullname" required>
+                </p>
+                <p>
+                    <label>Apellidos</label>
+                    <input type="text" name="lastname" required>
+                </p>
+                <p>
+                    <label>Numero telefonico</label>
+                    <input type="tel" name="phone" required>
+                </p>
+                <p>
+                    <label>Correo Electronico</label>
+                    <input type="email" name="email" required>
+                </p>
+                <p class="block">
+                    <label>Mensaje</label> 
+                    <textarea name="message" rows="3" required></textarea>
+                </p>
+                <br>
+                <p class="block">
+                    <a target="_blank"><button type="submit">
+                        Enviar
+                    </button></a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
 </section>
-
 <a id="boton_wsp" href="https://api.whatsapp.com/send?phone=+51%20977334989&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.">
     <span class="material-icons-outlined">
         whatsapp
@@ -193,7 +218,6 @@
 <section class="section section_comentarios">
     <h1 class="section_title"><span>Nuestros clientes</span></h1>
     <h2>Tu opinión es muy importante para nosotros. Déjanos tu comentario para seguir mejorando y brindarte mejor nuestros servicios.</h2>
-
     <div class="comentarios">
         <div id="disqus_thread"></div>
         <script>

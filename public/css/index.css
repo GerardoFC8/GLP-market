@@ -287,183 +287,123 @@
 }
 
 /*========= Cotizar========*/
-.contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    padding: 20px;
 }
 
-.contenedor article {
-	line-height: 28px;
+.container .content{
+    position: relative;
+    max-width: 800px;
+
+}
+.content a{
+    position: relative;
+    padding: 20px 40px;
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: var(--white);
+    background: var(--fushia);    
 }
 
-.contenedor article h1 {
-	font-size: 30px;
-	text-align: left;
-	padding: 50px 0;
+.salir{
+    background: var(--fushia);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 100%;
+    display: inline-block;
+    text-decoration: none;
+    float: right;
 }
 
-.contenedor article p {
-	margin-bottom: 20px;
+.container#blur .active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
 }
 
-.contenedor article .btn-abrir-popup {
-	padding: 0 20px;
-	margin-bottom: 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: var(--white);
-	background: var(--fushia);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	cursor: pointer;
+#popup{
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30 );
+    background: var(--white);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 25px;
 }
 
-.contenedor article .btn-abrir-popup:hover {
-	background: var(--fushia);
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
-.contenedor-inputs{
-	height: 400px;
-	width: 800px;
-	margin-top: 100px;
+#popup h2{
+    color: var(--void);
 }
 
-.contenedor-inputs textarea{
-	height: 100px;
-	width: 800px;
+.contact-form {
+    width: 70%;
+    margin-top: 50px;
 }
 
-/* ------------------------- */
-/* POPUP */
-/* ------------------------- */
-
-.overlay {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.overlay.active {
-	visibility: visible;
+.contact-form form label {
+    display: block;
+    margin-left: 85px;
 }
 
-.popup {
-	background: #F8F8F8;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	padding: 20px;
-	text-align: center;
-	width: 850px;	
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
 }
 
-.popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #BBBBBB;
+.contact-form form .block {
+    grid-column: 1 / 3;
 }
 
-.popup .btn-cerrar-popup:hover {
-	color: #000;
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: var(--void);
+    border-bottom: 1px solid var(--fushia);
+    margin-left: 85px;
 }
 
-.popup h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
+.contact-form form button {
+    background: var(--fushia);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 50px;
 }
 
-.popup h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs {
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
-}
-
-.popup form .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: var(--white);
-	background: var(--fushia);
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-}
-
-.popup form .btn-submit:hover {
-	background: var(--fushia);  
-}
-
-/* ------------------------- */
-/* ANIMACIONES */
-/* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .3s ease .1s forwards; }
-.popup.active h4 { animation: entradaSubtitulo .3s ease .s forwards; }
-.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
-
-@keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: var(--fushia);
+    color: var(--white);
+    transition: background-color 1s ease-out;
+    outline: 0;
 }

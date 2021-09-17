@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,400;0,700;0,900;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/facebook?style=brands">
+    <script src="https://kit.fontawesome.com/74ea913bab.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="image/icono.ico" rel="icono">

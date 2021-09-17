@@ -51,7 +51,7 @@
 }
 
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 17px;
     text-transform: capitalize;
     color: var(--white);
     text-decoration: none;
@@ -77,6 +77,13 @@
 .logo_footer{
     width: 400px;
     margin: 4em 0;
+}
+
+/* REDES SOCIALES */
+
+.icono{
+    color: var(--fushia);
+    font-size: 50px;
 }
 
 @media screen and (max-width: 1100px){

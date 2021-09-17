@@ -14,9 +14,9 @@
             <div class="footer-col">
                 <h4>Redes sociales</h4>
                 <div class="redes-sociales">
-                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f redes"></i></a>
-                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class=" icono fab fa-facebook-square"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class=" icono fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="icono fab fa-instagram-square"></i></a>
                 </div>
             </div>
             <div class="footer-col">
