@@ -121,6 +121,7 @@
 }
 
 .agregar_carro{
+    display: none;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -150,19 +151,22 @@
     place-items: center;
 }
 
+.box-contenido input{
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+}
 
 .box-contenido input[type="submit"]{
     text-decoration: none;
-    background: var(--fushia);
+    background: transparent;
     color: var(--white);
-    border-radius: 25px;
-    height: 20px;
-    width: 150px;
     text-decoration: none;
-    border: 0px;
+    border: 2px solid var(--fushia);
+    text-transform: uppercase;
 }
 
 .box-contenido input[type="submit"]:hover{
-    background: var(--white);
-    color: var(--fushia);
+    background: var(--fushia);
+    color: white;
 }

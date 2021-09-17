@@ -42,8 +42,8 @@
                             @csrf
                             <input type="hidden" name="producto" value="{{ $product->Nombre }}">
                             <input type="hidden" name="Precio" value="{{ $product->Precio }}">
-                            <input type="number" name="cantidad" value="1">
-                            <input type="submit" value="Agregar al carrito" name="btnAgregar" class="btnAgre">
+                            <input type="number" name="cantidad" value="1" style="width: 80px;">
+                            <input type="submit" value="Agregar" name="btnAgregar" class="btnAgre">
                         </form>
                         <a href="{{ url('add-cart/'.$product->id) }}" class="agregar_carro">
                             <div class="texto_agregar">
