@@ -10,7 +10,7 @@
 
                 <ul class="menu-box">
                     <li class="active li-nav1 menu-item" data-url="nosotros">
-                        <button role="link" onclick="window.location='#'" class="navbutton">
+                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion1">
                             <span class="material-icons-outlined iconnav">
                                 groups
                             </span>
@@ -19,7 +19,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="servicios">
-                        <button role="link" onclick="window.location='#'" class="navbutton">
+                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion2">
                             <span class="material-icons-outlined iconnav">
                                 miscellaneous_services
                             </span>
@@ -28,7 +28,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="servicios">
-                        <button role="link" onclick="window.location='#'" class="navbutton">
+                        <button role="link" onclick="window.location='#'" class="navbutton scrollto" data-link="seccion3">
                             <span class="material-icons-outlined iconnav">
                                 miscellaneous_services
                             </span>
@@ -37,7 +37,7 @@
                     </li>
 
                     <li class="active li-nav1 menu-item" data-url="contacto">
-                        <button role="link" onclick="window.location='contacto'" class="navbutton">
+                        <button role="link" onclick="window.location='contacto'" class="navbutton scrollto">
                             <span class="material-icons-outlined iconnav">
                                 call
                             </span>
@@ -92,4 +92,5 @@
         </div>
     </header>
 <script src="js/barra_carro.js"></script>
+<script src="js/botones_barra_navegacion.js"></script>
 <script src="js/barra_observer.js"></script>
