@@ -18,7 +18,6 @@
 .footer{
     background-color:var(--void);
     padding: 2em 0;
-
 }
 
 .footer-col{
@@ -81,7 +80,7 @@
 
 /* REDES SOCIALES */
 
-.icono{
+footer .icono{
     color: var(--fushia);
     font-size: 50px;
 }

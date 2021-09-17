@@ -16,8 +16,7 @@
 }
 
 .barra2 .nav2 ul li button{
-    display: block;
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-bottom: 3px solid var(--void);
 }
 
