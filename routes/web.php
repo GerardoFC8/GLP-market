@@ -37,3 +37,8 @@ Route::resource('/detalles', ServiciosController::class);
 Route::get('/cart', function () {
     return view('cart');
 });
+Route::middleware(['auth:sanctum', 'verified'])->get('/dash', function () {
+    return view('dash.index');
+})->name('dash');
+
+Route::resource('crud', 'App\Http\Controllers\CreateProductoController');

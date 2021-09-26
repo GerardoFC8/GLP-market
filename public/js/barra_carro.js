@@ -7,8 +7,7 @@ const calcularPosicionTooltip = () => {
     const y = icono.offsetTop;
 
     //Calculamos el tamaño del tooltip
-    const anchoTooltip = tooltip.clientWidth;
-    const altoTooltip = tooltip.clientHeight;
+
 
     //calcular el posicionamiento del tooltip
     const izquierda = x + 8;

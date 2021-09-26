@@ -23,14 +23,11 @@
                 <td>{{ $key.": " . $value }}</td>
                 <?php } 
 
-                echo "<td><a href='cart?item=$indice'>Eliminar</a></td>";
-                
+                echo "<td><a href='/?item=$indice'>Eliminar</a></td>";
                 ?>
 
             </tr>
 
-            
-            <br><br>
 <?php        } ?>
             <tr>
                 <td colspan="4" class="td_total">- El total de la compra es S/.{{$total}} -</td>
@@ -38,7 +35,7 @@
         
             <tr>
                 <td colspan="4">
-                    <a href="cart?vaciar=true" class="td_vaciar">Vaciar carrito</a>
+                    <a href="/?vaciar=true" class="td_vaciar">Vaciar carrito</a>
                 </td>
             </tr>
             
@@ -50,12 +47,13 @@
         echo "El carrito esta vacio";
         
 ?>
-        <a href="/">Regresar</a>
+
 <?php
     }
 
     if (isset($_REQUEST["vaciar"])) {
         session_destroy();
+        header("location:/");
     }
 
     if (isset($_REQUEST["item"])){
@@ -64,7 +62,7 @@
         unset($_SESSION["carrito"][$producto]);
         
         echo "<script>alert('Producto $producto eliminado con exito del carrito de compras');</script>";
-        header("location:/cart");
+        header("location:/");
     }
 
 ?>

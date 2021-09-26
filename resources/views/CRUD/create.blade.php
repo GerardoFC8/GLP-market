@@ -1,18 +1,49 @@
-<form action="{{ url('/index') }}" method="post" enctype="multipart/form-data">
-    @csrf
-    <label for="Categoria">Categoria: </label>
-    <input type="text" name="Categoria">
-    <br><br>
+@extends('adminlte::page')
 
-    <label for="ImgCategoria">Imagen Categoria: </label>
-    <input type="file" name="ImgCategoria">
-    <br><br>
+@section('title', 'Dashboard')
 
-    <label for="Descripcion">Descripcion: </label>
-    <textarea name="Descripcion"></textarea>
-    <br><br>
+@section('content_header')
+    <h1>Dashboard</h1>
+@stop
+
+@section('content')
     
-    <input type="submit" value="Agregar">
-    <br><br>
+<h2>Crear Producto</h2>
 
+<form action="/crud" method="post" enctype="multipart/form-data">
+    @csrf
+
+    <label for="Producto">Producto</label>
+    <input type="text" name="Producto">
+    <br>
+
+    <label for="Categoria">Categoria</label>
+    <input type="text" name="Categoria">
+    <br>
+
+    <label for="Imagen">Imagen</label>
+    @if(isset($producto->Imagen_producto))
+        <img src="{{ asset('storage').'/'.$producto->Imagen_producto }}" width="100" alt="">
+    @endif
+    <input type="file" name="Imagen">
+    <br>
+
+    <label for="Descripcion">Descripcion</label>
+    <input type="text" name="Descripcion">
+    <br>
+
+    <label for="Precio">Precio</label>
+    <input type="text" name="Precio">
+    <br>
+
+    <a href="/crud">Cancelar</a>
+    <button type="submit">Guardar</button>
 </form>
+@stop
+
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
+
+@section('js')
+@stop
