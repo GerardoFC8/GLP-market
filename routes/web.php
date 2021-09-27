@@ -43,4 +43,3 @@ Route::resource('crud', 'App\Http\Controllers\CreateProductoController');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dash', function () {
     return view('auth.login');
 })->name('dash');
-
