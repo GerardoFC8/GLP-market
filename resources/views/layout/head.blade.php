@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/facebook?style=brands">
     <script src="https://kit.fontawesome.com/74ea913bab.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset.css">    
     <link rel="icon" href="image/icono.ico" rel="icono">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/barra_navegacion.css">

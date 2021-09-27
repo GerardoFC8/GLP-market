@@ -42,3 +42,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dash', function () {
 })->name('dash');
 
 Route::resource('crud', 'App\Http\Controllers\CreateProductoController');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
