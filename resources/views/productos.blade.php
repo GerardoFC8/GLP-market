@@ -45,7 +45,7 @@
                             
                             <div class="botones_cantidad">
                                 <div class="boton_disminuir_cant">-</div>
-                                <input type="text" name="cantidad" value="1" class="cantidad_cant">
+                                <input type="number" name="cantidad" value="1" class="cantidad_cant">
                                 <div class="boton_aumentar_cant">+</div>
                             </div>
                             <input type="submit" value="Agregar" name="btnAgregar" class="btnAgre">
