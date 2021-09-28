@@ -49,12 +49,13 @@
                         </form>
                     </div>
 
-                    <div class="ligthbox">
+                    <div class="ligthbox<?=$product->id?>">
                         <img src="{{asset('storage').'/'.$product->Imagen_producto}}" alt="imagen producto ligthbox">
                     </div>
 
                     <script>
-                        console.log("<?=$product->Nombre?>");
+                        const imagen1 = document.querySelector(".ligthbox<?=$product->id?>");
+                        imagen1.style.visibility = "hidden";
                     </script>
                 </div>
             </div>
