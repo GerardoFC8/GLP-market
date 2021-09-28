@@ -156,6 +156,7 @@
     font-size: 2rem;
     background: transparent;
     color: white;
+    border: none;
 }
 
 .box-contenido input[type="submit"]{
@@ -170,4 +171,59 @@
 .box-contenido input[type="submit"]:hover{
     background: var(--fushia);
     color: white;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.botones_cantidad{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.boton_unidades{
+    display: flex;
+    margin: 10px 0;
+}
+
+.boton_disminuir_cant, 
+.boton_aumentar_cant {
+    width: 20px;
+    padding: 10px;
+    background-color: var(--fushia);
+    color:  white;
+
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:  pointer;
+    font-weight: 600;
+}
+.boton_aumentar_cant:hover, 
+.boton_disminuir_cant:hover{
+    background-color: #D3164F;
+    transition: all 200ms ease;
+}
+.cantidad_cant {
+    font-size: 20px ;
+    width: 20px ;
+    margin: 0 5px ;
+    padding: 10px ;
+    background-color: white ;
+    color: black ;
+
+    border-radius: 5px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
 }
