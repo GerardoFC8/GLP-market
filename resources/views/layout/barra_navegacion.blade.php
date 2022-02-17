@@ -5,7 +5,7 @@
                 <label for="ckbox" class="drawer">
                     <span class="material-icons-outlined">menu</span>
                 </label>
-                <img src="image/logo.png" alt="logo barra" width="100px" onClick="window.location.href='http://localhost:8000/'" style="cursor: pointer;">
+                <img src="image/logo.png" alt="logo barra" width="100px" onClick="window.location.href='/'" style="cursor: pointer;">
 
 
                 <ul class="menu-box">

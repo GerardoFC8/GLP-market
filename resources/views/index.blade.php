@@ -9,7 +9,7 @@
     <div class="main_container">
         <div class="container-frase">
             <h1>
-                <span>Queremos despertar pasión por el gas GLP.</span>
+                <span>Construyendo un mejor futuro</span>
             </h1>
         </div>
         <div class="container-img">
