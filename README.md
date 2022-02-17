@@ -25,7 +25,7 @@
   </ol>
 </details>
 <br>
-
+<hr>
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
@@ -37,6 +37,7 @@
 Este proyecto se define como híbrido entre landing page y tienda virtual, nos centramos en el impacto visual y la estética de la página entregando un sistema con un carrito basando en cookies. Haciendo uso del motor de base de datos mysql.
 
 <p align="right">(<a href="#top">ir al inicio</a>)</p>
+<hr>
 
 ### Construido con
 * [Laravel](https://laravel.com)
@@ -45,11 +46,13 @@ Este proyecto se define como híbrido entre landing page y tienda virtual, nos c
 * [composer](https://getcomposer.org/)
 
 <p align="right">(<a href="#top">ir al inicio</a>)</p>
+<hr>
 
 ### Prerequisitos
 * PHP 8.0.3 o mayor
 * Se requiere tener instalado[Composer](https://getcomposer.org/)
 * Se requiere tener instalado [XAMPP](https://www.apachefriends.org/index.html)
+<hr>
 
 ### Iniciar localmente
 1. Clonar el repositorio e ingresar a la carpeta respectiva
@@ -75,6 +78,7 @@ Este proyecto se define como híbrido entre landing page y tienda virtual, nos c
    php artisan serve
    ```
 <p align="right">(<a href="#top">ir al inicio</a>)</p>
+<hr>
 
 ### Screenshots
 <img src="screenshot(/../screenshots/index.gif">
