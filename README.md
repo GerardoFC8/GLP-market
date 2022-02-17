@@ -6,7 +6,7 @@
 
   <h1 align="center">GLP-market⚡</h1>
   <p align="center">
-    Ecommerce website implementando el framework laravel.
+    Ecommerce website implementando el framework laravel y el motor de bases de datos MariaDB.
     <br />
   </p>
 </div>
