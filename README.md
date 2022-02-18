@@ -50,7 +50,7 @@ Este proyecto se define como híbrido entre landing page y tienda virtual, nos c
 
 ### Prerequisitos
 * PHP 8.0.3 o mayor
-* Se requiere tener instalado[Composer](https://getcomposer.org/)
+* Se requiere tener instalado [Composer](https://getcomposer.org/)
 * Se requiere tener instalado [XAMPP](https://www.apachefriends.org/index.html)
 <hr>
 
